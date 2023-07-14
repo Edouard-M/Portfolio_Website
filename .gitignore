@@ -1,0 +1,14 @@
+# Environments
+.env
+.venv
+env/
+ENV/
+
+# VSCode
+.vscode/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# nodes
+node_modules/
