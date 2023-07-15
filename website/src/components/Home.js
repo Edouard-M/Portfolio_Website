@@ -20,8 +20,8 @@ function Home() {
         </div>
         <div className='home-right'>
             <div className='home-content-right'>
-                <div className='home-right-photo'>
-                    <p>photo here</p>
+                <div className='home-right-circle_1'>
+                    <div className='home-right-circle'><img src={require("../assets/Me_circle.png")} className="home-photo" alt='Edouard'></img></div>
                 </div>
             </div>
         </div>
