@@ -7,10 +7,6 @@ import './App.css';
 import LandingPage from './pages/LandingPage';
 import Loader from './components/Loader';
 
-window.onload=()=>{
-  <div id="preloader">
-  </div>
-  }
 
 function App() {
   
