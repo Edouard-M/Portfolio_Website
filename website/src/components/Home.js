@@ -1,12 +1,21 @@
 import React from 'react'
 
+//<p className='home-full-stack'> Full-Stack </p>
+
 function Home() {
   return (
     <div className='home-mid'>
         <div className='home-left'>
             <div className='home-content-left'>
                 <h1 className='home-name'> Edouard Mignien</h1>
-                <div className='home-me'>I'm a <p className='home-full-stack'> Full-Stack </p> Software Engineer</div>
+                <div className='home-me'>
+                    I'm a 
+                    <section className="home-animation">
+                        <div className="first"><div>full-stack</div></div>
+                        <div className="second"><div>back-end</div></div>
+                    </section>
+                    Software Engineer
+                </div>
             </div>
         </div>
         <div className='home-right'>

@@ -3,6 +3,7 @@
     --color-text: #45505B;
     --color-white: #FFFFFF;
     --color-debug: #006400;
+    --color-grey: #f2f3f5;
   }
 
 html{
@@ -63,7 +64,7 @@ body {
 .navbar-item{
     --text-display: none;
     color: var(--color-text);
-    background: #f2f3f5;
+    background: var(--color-grey);
     display: flex;
     flex-direction:row;
     -ms-flex-align: center;
@@ -205,8 +206,42 @@ body {
   white-space: nowrap;
 }
 
-#container {
-  filter: url(#threshold) blur(0.6px);
+.home-animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.home-animation > div > div {
+  margin-bottom: 2.81rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  display:inline-block;
+}
+
+.home-animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+.second div {
+  background-color: var(--color-grey);
+  color: var(--color-main);
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  16.6% {margin-top: 0;}
+  33% {margin-top: -5.62rem;}
+  50% {margin-top: -5.62rem;}
+  66.6% {margin-top:  -5.62rem;}
+  83% {margin-top: 0;}
+  100% {margin-top: 0;}
 }
 
 
