@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Home from '../components/Home'
 import About from '../components/About'
+import Skills from '../components/Skills'
 
 
 
@@ -18,7 +19,7 @@ function LandingPage() {
               <About/>
             </section>
             <section id="skills" className='skills'>
-            skills
+              <Skills/>
             </section>
             <section id="projects" className='projects'>
             projects
