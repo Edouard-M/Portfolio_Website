@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {AiOutlineHome} from 'react-icons/ai'
-import {IoPersonOutline, IoFolderOutline, IoDocumentTextOutline} from 'react-icons/io5'
+import {IoPersonOutline, IoFolderOutline, IoDocumentTextOutline, IoCodeSlashSharp} from 'react-icons/io5'
 
 function Navbar() {
   return (
@@ -13,6 +13,9 @@ function Navbar() {
           </li>
           <li>
             <a href="#about" className="navbar-item"> <div className='navbar-icon'><IoPersonOutline/></div> <span className='navbar-text'>About</span></a>
+          </li>
+          <li>
+            <a href="#skills" className="navbar-item"> <div className='navbar-icon'><IoCodeSlashSharp/></div> <span className='navbar-text'>Skills</span></a>
           </li>
           <li>
             <a href="#projects" className="navbar-item"> <div className='navbar-icon'><IoFolderOutline/></div> <span className='navbar-text'>Projects</span></a>

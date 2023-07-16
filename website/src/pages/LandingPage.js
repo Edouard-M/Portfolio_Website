@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Home from '../components/Home'
+import About from '../components/About'
 
 
 
@@ -14,7 +15,10 @@ function LandingPage() {
           </section>
           <div id="main" className='main'>
             <section id="about" className='about'>
-            about
+              <About/>
+            </section>
+            <section id="skills" className='skills'>
+            skills
             </section>
             <section id="projects" className='projects'>
             projects
@@ -25,6 +29,7 @@ function LandingPage() {
           </div>
         </div>
     </div>
+    
   )
 }
 
