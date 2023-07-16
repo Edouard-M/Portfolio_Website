@@ -18,6 +18,9 @@ function App() {
             <Route path="/" exact element={<LandingPage/>} />
           </Routes>
         </Router>
+        <footer id="footer">
+          Edouard Mignien
+        </footer>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React from 'react'
-import {BiLogoLinkedin, BiLogoGithub, BiLogoGmail} from 'react-icons/bi'
 import {FaCircleArrowDown} from 'react-icons/fa6'
-import { Link } from "react-router-dom";
+import SocialLinks from './SocialLinks'
 
 
 function Home() {
@@ -20,19 +19,7 @@ function Home() {
                         Software Engineer
                     </div>
                     <div>
-
-                    <div className='home-left-social-links'>
-                        <Link to="https://www.linkedin.com/in/edouard-mignien/" target="_blank" className="home-social-link">
-                            <div className='home-social-circle-color'><div className='home-social-circle-blank'><div className='home-social-icon'><BiLogoLinkedin/></div></div></div>
-                        </Link>
-                        <Link to="https://github.com/Edouard-M" target="_blank" className="home-social-link">
-                        <div className='home-social-circle-color'><div className='home-social-circle-blank'><div className='home-social-icon'><BiLogoGithub/></div></div></div>
-                        </Link>
-                        <Link to="" target="_blank" className="home-social-link">
-                        <div className='home-social-circle-color'><div className='home-social-circle-blank'><div className='home-social-icon'><BiLogoGmail/></div></div></div>
-                        </Link>
-                    </div>
-
+                        <SocialLinks/>
                     </div>
                 </div>
             </div>
