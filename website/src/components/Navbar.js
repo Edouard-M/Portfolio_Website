@@ -9,11 +9,6 @@ function Navbar() {
 
   const [activeSection, setActiveSection] = useState(section_init);
 
-  useEffect(() => {
-    //window.location.hash = activeSection;
-  }, [activeSection]);
-
-
   const handleClick = (section) => {
     setActiveSection(section);
   };
@@ -25,13 +20,11 @@ function Navbar() {
       const sections = document.querySelectorAll('section');
       
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
+        const offset = 75;
+        const sectionTop = section.offsetTop - offset; // Offset
+        const sectionBottom = section.offsetTop + section.offsetHeight - offset; // Offset
 
-        if (
-          scrollPosition >= sectionTop - 50 && // Offset
-          scrollPosition < sectionTop + sectionHeight - 50 // Offset
-        ) {
+        if ( scrollPosition >= sectionTop && scrollPosition < sectionBottom ) {
           setActiveSection(section.id);
         }
       });
