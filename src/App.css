@@ -1,6 +1,7 @@
 :root {
-    --color-main: #7e0419;
     --color-main: #0563BB;
+    --color-main: #00ABEB;
+    --color-second: #01153E;
     --color-text: #45505B;
     --color-white: #FFFFFF;
     --color-debug: #006400;
@@ -120,7 +121,7 @@ h2::after {
 
 .navbar-ul #active{
   color: var(--color-white);
-  background: var(--color-main);
+  background: var(--color-second);
 }
 
 .navbar-item:hover {
@@ -437,61 +438,45 @@ h2::after {
 .about-main{
   display: flex;
   flex-direction: row;
-  background-color: var(--color-debug);
   width: 1100px;
   /*width: 75vw;*/
   height: auto;
   margin-top: 25px;
-  padding: 50px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background: #FFF;
-  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
 }
 
 .about-main-column_1{
-  width: 250px;
+  width: 150px;
   height: 250px;
   flex-shrink: 0;
   background-color: var(--color-debug);
   background-color: rgba(0, 0, 0, 0);
+  overflow: visible;
 }
 
-.about-circle-1{
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-main);
-
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-circle-2{
-  width: 93%;
-  height: 93%;
-  border-radius: 50%;
-  background-color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .about-photo{
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 7%;
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: -70px;
+  left: -10px;
 }
 
 .about-main-column_2{
-  margin-left: 50px;
+  
+  margin-left: 90px;
   height: auto;
   display: flex;
   flex-direction: column;
-  flex: 100;
+  width: 780px;
+  background: red;
+  padding: 40px 70px 30px 70px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
   
   justify-content: center;
   align-items: center;
@@ -565,6 +550,7 @@ h2::after {
   padding-bottom: 0px;
 
   --color-button-active: radial-gradient(1467.16% 226.01% at 100.00% 100.00%, #0563BB 0%, #0084FF 13.77%, #FFF 100%);
+  --color-button-active: var(--color-second);
 }
 
 .skills-buttons-container #active{
@@ -573,16 +559,15 @@ h2::after {
 }
 
 .skills-button-left{
-  width: 200px;
-  height: 60px;
+  cursor: pointer;
+  width: 250px;
+  height: 55px;
   border-radius: 30px 0px 0px 30px;
   background: var(--color-button-left);
   color: var(--color-text);
-  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
-  border: 0px solid black;
+  border: 1px solid var(--color-text);
   font-family: var(--font-Raleway);
-  font-size: 22px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   transition: all 0.2s;
@@ -594,15 +579,15 @@ h2::after {
 }
 
 .skills-button-mid{
-  width: 200px;
-  height: 60px;
+  cursor: pointer;
+  width: 250px;
+  height: 55px;
   border-radius: 0px;
   background: var(--color-button-mid);
   color: var(--color-text);
-  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
-  border: 0px solid black;
+  border: 1px solid var(--color-text);
   font-family: var(--font-Raleway);
-  font-size: 22px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   transition: all 0.2s;
@@ -614,15 +599,15 @@ h2::after {
 }
 
 .skills-button-right{
-  width: 200px;
-  height: 60px;
+  cursor: pointer;
+  width: 250px;
+  height: 55px;
   border-radius: 0px 30px 30px 0px;
   background: var(--color-button-right);
   color: var(--color-text);
-  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
-  border: 0px solid black;
+  border: 1px solid var(--color-text);
   font-family: var(--font-Raleway);
-  font-size: 22px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   transition: all 0.2s;
@@ -661,7 +646,8 @@ h2::after {
 }
 
 .skills-card{
-  background-color: var(--color-white);
+  background-color: var(--color-text);
+  background-color: var(--color-main);
   margin: 50px;
   border-radius: 15px;
   width: 200px;
@@ -670,18 +656,32 @@ h2::after {
   padding: 10px;
 }
 
+.skills-card:hover{
+  background-color: var(--color-text);
+}
+
+
 .skills-card-icone{
   height: 50%;
   display: flex;
   align-items: center;
-
+  font-size: 60px;
+  color: var(--color-white);
 }
 
 .skills-card-text{
   height: 50%;
   display: flex;
   align-items: center;
+  color: var(--color-white);
+  font-family: var(--font-Poppins);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+}
 
+.icone-autre{
+  color: #387EB8;
 }
 
 .skills-icones-container{

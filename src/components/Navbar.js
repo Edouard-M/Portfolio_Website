@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import {AiOutlineHome} from 'react-icons/ai'
-import {IoPersonOutline, IoFolderOutline, IoDocumentTextOutline, IoCodeSlashSharp} from 'react-icons/io5'
+import {IoPersonOutline, IoDocumentTextOutline, IoCodeSlashSharp} from 'react-icons/io5'
+import {BsLightbulb} from 'react-icons/bs'
 
 function Navbar() {
 
@@ -51,7 +52,7 @@ function Navbar() {
             <a href="#skills" onClick={() => handleClick('skills')} className="navbar-item" id={activeSection === 'skills' ? "active":""}> <div className='navbar-icon'><IoCodeSlashSharp/></div> <span className='navbar-text'>Skills</span></a>
           </li>
           <li>
-            <a href="#projects" onClick={() => handleClick('projects')} className="navbar-item" id={activeSection === 'projects' ? "active":""}> <div className='navbar-icon'><IoFolderOutline/></div> <span className='navbar-text'>Projects</span></a>
+            <a href="#projects" onClick={() => handleClick('projects')} className="navbar-item" id={activeSection === 'projects' ? "active":""}> <div className='navbar-icon'><BsLightbulb/></div> <span className='navbar-text'>Projects</span></a>
           </li>
           <li>
             <a href="#resume" onClick={() => handleClick('resume')} className="navbar-item" id={activeSection === 'resume' ? "active":""}> <div className='navbar-icon'><IoDocumentTextOutline/></div> <span className='navbar-text'>Resume</span></a>
