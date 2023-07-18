@@ -3,6 +3,8 @@ import Header from '../components/Header'
 import Home from '../components/Home'
 import About from '../components/About'
 import Skills from '../components/Skills'
+import Projects from '../components/Projects'
+import Resume from '../components/Resume'
 
 
 
@@ -22,10 +24,10 @@ function LandingPage() {
               <Skills/>
             </section>
             <section id="projects" className='projects'>
-            projects
+              <Projects/>
             </section>
             <section id="resume" className='resume'>
-            resume
+              <Resume/>
             </section>
           </div>
         </div>

@@ -29,8 +29,11 @@ h2{
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
   position: relative;
-  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2::before {
@@ -758,23 +761,67 @@ h2::after {
 # Projects
 --------------------------------------------------------------*/
 #projects{
-  background-color: rgb(124, 97, 97);
   width: 100%;
   height: auto;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container{
+  background-color:#0084FF ;
+  width:1200px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-project{
+  background: var(--color-debug);
+  flex: 0.2;
+  height: 600px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 50px;
+}
+
+.projects-project:hover{
+  flex: 1;
+}
+
+.projects-project-text{
+  display: flex;
+  justify-content:flex-end;
+  position: relative;
+  transform: rotate(-90deg);
+  left: -60px;
+  top: 125px;
+  color: var(--color-white);
+  font-family: var(--font-Raleway);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 #resume{
-  background-color: rgb(214, 208, 208);
   width: 100%;
   height: auto;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
+.resume-container{
+  background-color: rgb(214, 208, 208);
+  height: 800px;
+}
 
 
 
@@ -791,9 +838,11 @@ footer{
   background-color: var(--color-grey);
   color: var(--color-text);
   font-family: var(--font-Poppins);
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

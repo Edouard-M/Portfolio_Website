@@ -6,6 +6,7 @@ import {
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import Loader from './components/Loader';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,9 +19,7 @@ function App() {
             <Route path="/" exact element={<LandingPage/>} />
           </Routes>
         </Router>
-        <footer id="footer">
-          Edouard Mignien
-        </footer>
+        <Footer/>
     </div>
   );
 }
