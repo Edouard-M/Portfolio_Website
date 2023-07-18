@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: git-checkout
         uses: actions/checkout@v2
+        
+      - name: got to Directory
+        run: cd website/
       
       - name: Install all dependencies
         run: npm install
