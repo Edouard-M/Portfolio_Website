@@ -540,8 +540,16 @@ h2::after {
   align-items: center;
 }
 
+.skills-subtitle{
+  color: var(--color-second);
+  font-family: var(--font-Poppins);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  margin: 10px;
+}
+
 .skills-buttons-container{
-  padding-top: 25px;
   width: 100%;
   height: 100px;
   display: flex;
@@ -656,41 +664,56 @@ h2::after {
   padding: 10px;
 }
 
-.skills-card:hover{
-  background-color: var(--color-text);
-}
-
 
 .skills-card-icone{
   height: 50%;
   display: flex;
   align-items: center;
-  font-size: 60px;
+  font-size: 54px;
   color: var(--color-white);
+  margin-left: 5px;
 }
 
 .skills-card-text{
   height: 50%;
+  width: 90%;
   display: flex;
   align-items: center;
   color: var(--color-white);
   font-family: var(--font-Poppins);
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
-}
-
-.icone-autre{
-  color: #387EB8;
+  margin-left: 5px;
 }
 
 .skills-icones-container{
-  background-color: green;
   width: 100%;
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.skills-icones-list{
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 10px;
+  width: 950px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 2px;
+  margin: 20px 0px 20px 0px;
+  overflow: hidden;
+}
+
+.skills-icone{
+  margin: 0px 25px 0px 25px;
+  font-size: 45px;
+  color: var(--color-second);
 }
 
 
