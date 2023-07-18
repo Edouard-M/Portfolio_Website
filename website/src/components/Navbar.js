@@ -36,7 +36,7 @@ function Navbar() {
     };
   }, []);
 
-
+ 
   return (
     <div>
       <nav className='navbar' id="navbar">
