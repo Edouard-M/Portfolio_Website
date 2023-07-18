@@ -117,6 +117,11 @@ h2::after {
     line-height: 22.5px;
 }
 
+.navbar-ul #active{
+  color: var(--color-white);
+  background: var(--color-main);
+}
+
 .navbar-item:hover {
     background: var(--color-main);
     color: var(--color-white);
@@ -584,6 +589,7 @@ h2::after {
   background-color: rgb(124, 97, 97);
   width: 100%;
   height: auto;
+  height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -593,6 +599,7 @@ h2::after {
   background-color: rgb(214, 208, 208);
   width: 100%;
   height: auto;
+  height: 100vh;
 }
 
 
