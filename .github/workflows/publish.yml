@@ -12,15 +12,12 @@ jobs:
     steps:
       - name: git-checkout
         uses: actions/checkout@v2
-        
-      - name: got to Directory
-        run: cd website/
       
       - name: Install all dependencies
-        run: npm install
+        run: website/npm install
         
       - name: Build
-        run: npm run build # The build command of your project
+        run: website/npm run build # The build command of your project
         
       - name: Push
         uses: s0/git-publish-subdir-action@develop
