@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.061d3c46.css",
-    "main.js": "/static/js/main.45afab1b.js",
+    "main.css": "/static/css/main.c19ffa53.css",
+    "main.js": "/static/js/main.a0c39b00.js",
     "static/media/edouard_square.png": "/static/media/edouard_square.05aedef612a3ea79bafa.png",
     "index.html": "/index.html",
-    "main.061d3c46.css.map": "/static/css/main.061d3c46.css.map",
-    "main.45afab1b.js.map": "/static/js/main.45afab1b.js.map"
+    "main.c19ffa53.css.map": "/static/css/main.c19ffa53.css.map",
+    "main.a0c39b00.js.map": "/static/js/main.a0c39b00.js.map"
   },
   "entrypoints": [
-    "static/css/main.061d3c46.css",
-    "static/js/main.45afab1b.js"
+    "static/css/main.c19ffa53.css",
+    "static/js/main.a0c39b00.js"
   ]
 }
