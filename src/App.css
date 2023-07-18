@@ -628,11 +628,28 @@ h2::after {
 
 .skills-cards-container{
   width: auto;
-  height: auto;
+  height: 590px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  position: relative;
+}
+
+.skills-cards-container #active{
+  display: flex;
+  --skills-cards-background: var(--color-main);
+  --skills-cards-color: var(--color-white);
+  --skills-box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
+}
+
+.skills-cards-isActive{
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  --skills-cards-background: rgba(0, 0, 0, 0);
+  --skills-cards-color: rgba(0, 0, 0, 0);
+  --skills-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .skills-cards-row-1{
@@ -654,14 +671,14 @@ h2::after {
 }
 
 .skills-card{
-  background-color: var(--color-text);
-  background-color: var(--color-main);
+  background-color: var(--skills-cards-background);
   margin: 50px;
   border-radius: 15px;
   width: 200px;
   height: 170px;
-  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--skills-box-shadow);
   padding: 10px;
+  transition: all 0.8s;
 }
 
 
@@ -670,7 +687,7 @@ h2::after {
   display: flex;
   align-items: center;
   font-size: 54px;
-  color: var(--color-white);
+  color: var(--skills-cards-color);
   margin-left: 5px;
 }
 
@@ -679,7 +696,7 @@ h2::after {
   width: 90%;
   display: flex;
   align-items: center;
-  color: var(--color-white);
+  color: var(--skills-cards-color);
   font-family: var(--font-Poppins);
   font-size: 20px;
   font-style: normal;
@@ -688,26 +705,46 @@ h2::after {
 }
 
 .skills-icones-container{
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.skills-icones-list{
+  overflow: hidden;
   box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25) inset;
   border-radius: 10px;
   width: 950px;
   height: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.skills-icones-list{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-top: 15px;
-  padding-bottom: 2px;
-  margin: 20px 0px 20px 0px;
+  margin: 10px 0px 10px 0px;
   overflow: hidden;
+  width: 1000px;
+  height: 100%;
+
+}
+
+.skills-icones-list-move1{
+  position: relative;
+  animation: icones-list-animation 20s infinite linear;
+}
+
+.skills-icones-list-move2{
+  position: relative;
+  margin-left: -140px;
+  animation: icones-list-animation 20s infinite linear;
+}
+
+
+@keyframes icones-list-animation{
+  0% {left: -430px;}
+  100% {left: 430px;}
 }
 
 .skills-icone{

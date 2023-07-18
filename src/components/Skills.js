@@ -15,16 +15,6 @@ function Skills() {
   };
 
 
-  function cards(){
-    if(activeButton === 0)
-      return <CardsBackEnd/>
-    else if(activeButton === 1)
-      return <CardsFrontEnd/>
-    else
-      return <CardsSoftSkills/>
-  }
-
-
   return (
     <div className='skills-main'>
       <h2>SKILLS</h2>
@@ -37,10 +27,17 @@ function Skills() {
         <button className='skills-button-right' id={activeButton === 2 ? "active":""} onClick={() => handleClick(2)}>Soft Skills</button>
       </div>
       <div className='skills-cards-container'>
-        {cards()}
+        <div className='skills-cards-isActive' id={activeButton === 0 ? "active":""}><CardsBackEnd/></div>
+        <div className='skills-cards-isActive' id={activeButton === 1 ? "active":""}><CardsFrontEnd/></div>
+        <div className='skills-cards-isActive' id={activeButton === 2 ? "active":""}><CardsSoftSkills/></div>
       </div>
       <div className='skills-icones-container'>
-        <IconesList/>
+        <div className='skills-icones-list-move1'>
+          <IconesList/>
+        </div>
+        <div className='skills-icones-list-move2'>
+          <IconesList/>
+        </div>
       </div>
     </div>
   )
