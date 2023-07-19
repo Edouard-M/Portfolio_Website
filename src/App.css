@@ -391,10 +391,18 @@ h2::after {
 # About
 --------------------------------------------------------------*/
 #about{
-  background-color: var(--color-white);
+  background-color: var(--color-main);
   width: 100%;
   height: auto;
   padding-bottom: 100px;
+}
+
+.about-h2{
+  color: var(--color-white);
+}
+
+.about-h2:after{
+  background: var(--color-second);
 }
 
 .about-container{
@@ -406,7 +414,7 @@ h2::after {
 
 
 .about-title{
-  color: var(--color-text);
+  color: var(--color-white);
   font-family: var(--font-Raleway);
   font-size: 32px;
   font-weight: bold;
@@ -451,7 +459,6 @@ h2::after {
   width: 150px;
   height: 250px;
   flex-shrink: 0;
-  background-color: var(--color-debug);
   background-color: rgba(0, 0, 0, 0);
   overflow: visible;
 }
@@ -478,7 +485,7 @@ h2::after {
   padding: 40px 70px 30px 70px;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #FFF;
+  background: var(--color-second);
   box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
   
   justify-content: center;
@@ -488,7 +495,7 @@ h2::after {
 .about-text{
   width: 100%;
   flex: 40;
-  color: var(--color-text);
+  color: var(--color-white);
   font-family: var(--font-Poppins);
   font-size: 16px;
   font-style: italic;
@@ -501,7 +508,7 @@ h2::after {
   flex: 60;
   display: flex;
   flex-direction: row;
-  color: var(--color-text);
+  color: var(--color-white);
   font-family: var(--font-Poppins);
   font-size: 16px;
   font-style: normal;
@@ -780,7 +787,6 @@ h2::after {
 }
 
 .projects-container{
-  background-color:#0084FF ;
   width:1200px;
   display: flex;
   flex-direction: row;
@@ -792,12 +798,13 @@ h2::after {
 }
 
 .projects-project{
-  background: var(--color-debug);
+  background: var(--color-second);
   flex: 0.2;
   height: 600px;
   margin-left: 25px;
   margin-right: 25px;
   border-radius: 50px;
+  transition: all 0.8s;
 }
 
 .projects-project:hover{

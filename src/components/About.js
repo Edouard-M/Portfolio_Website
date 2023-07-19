@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <div className='about-container'>
-        <h2> ABOUT </h2>
+        <h2 className='about-h2'> ABOUT </h2>
         <div className='about-main'>
           <div className='about-main-column_1'>
             <img src={require("../assets/edouard_square.png")} className="about-photo" alt='Edouard'></img>
