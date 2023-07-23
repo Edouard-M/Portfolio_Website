@@ -43,7 +43,7 @@ function Navbar() {
       <nav className='navbar' id="navbar">
         <ul className='navbar-ul'>
           <li className='navbar-il'>
-            <a href="#home" onClick={() => handleClick('home')} className="navbar-item" id={activeSection === 'home' ? "active":""}> <div className='navbar-icon' ><AiOutlineHome/></div> <div className='navbar-text'><span>Home</span></div></a>
+            <a href="#hero" onClick={() => handleClick('hero')} className="navbar-item" id={activeSection === 'hero' ? "active":""}> <div className='navbar-icon' ><AiOutlineHome/></div> <div className='navbar-text'><span>Home</span></div></a>
           </li>
           <li>
             <a href="#about" onClick={() => handleClick('about')} className="navbar-item" id={activeSection === 'about' ? "active":""}> <div className='navbar-icon'><IoPersonOutline/></div> <span className='navbar-text'>About</span></a>
