@@ -4,6 +4,7 @@ import Hero from '../components/landing_page_sections/Hero'
 import About from '../components/landing_page_sections/About'
 import Skills from '../components/landing_page_sections/Skills'
 import Projects from '../components/landing_page_sections/Projects'
+import Experiences from '../components/landing_page_sections/Experiences'
 
 
 
@@ -23,6 +24,9 @@ function LandingPage() {
           </section>
           <section id="projects" className='projects'>
             <Projects/>
+          </section>
+          <section id="experiences" className='experiences'>
+            <Experiences/>
           </section>
         </div>
     </div>

@@ -55,7 +55,7 @@ function Navbar() {
             <a href="#projects" onClick={() => handleClick('projects')} className="navbar-item" id={activeSection === 'projects' ? "active":""}> <div className='navbar-icon'><BsLightbulb/></div> <span className='navbar-text'>Projects</span></a>
           </li>
           <li>
-            <a href="#resume" onClick={() => handleClick('resume')} className="navbar-item" id={activeSection === 'resume' ? "active":""}> <div className='navbar-icon'><IoDocumentTextOutline/></div> <span className='navbar-text'>Resume</span></a>
+            <a href="#experiences" onClick={() => handleClick('experiences')} className="navbar-item" id={activeSection === 'experiences' ? "active":""}> <div className='navbar-icon'><IoDocumentTextOutline/></div> <span className='navbar-text'>Resume</span></a>
           </li>
         </ul>
       </nav>

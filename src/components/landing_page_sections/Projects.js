@@ -33,8 +33,6 @@ var project3 = {
 
 
 function Projects() {
-
-    console.log(project1.title)
   return (
     <div className='projects-main'>
         <h2 className='projects-h2'>Projects<span className='point'>.</span></h2>
