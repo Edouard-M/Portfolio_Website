@@ -6,7 +6,6 @@ import {
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import Loader from './components/generics/Loader';
-import Footer from './components/generics/Footer';
 
 
 
