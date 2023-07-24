@@ -8,6 +8,7 @@
     --font-Raleway: "Raleway", sans-serif;
     --font-Poppins: "Poppins", sans-serif;
     --font-Open: "Open sans", sans-serif;
+    --font-Bitter: "Passion One", sans-serif;
   }
 
 html{
@@ -689,6 +690,76 @@ h2::after {
   background-color: var(--color-white);
   color: var(--color-text);
   cursor:pointer;
+}
+
+/*--------------------------------------------------------------
+# Feedbacks
+--------------------------------------------------------------*/
+
+#feedbacks{
+  margin-bottom: 50px;
+}
+
+.feedbacks-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text);
+}
+
+.feedback-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+.feedback-image{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: var(--color-grey);
+  margin-bottom: 10px;
+}
+
+.feedback-name{
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.feedback-citation{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.feedback-subtitle{
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(69, 80, 91, 0.70);
+}
+
+.feedback-text{
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
+
+.feedback-quote{
+  font-size: 52px;
+  font-family: var(--font-Bitter);
+  font-weight: 400;
+  color: var(--color-main);
+}
+
+.feedback-rotate{
+  transform: rotate(180deg) translateY(25px);
+}
+
+.feedbacks-counter{
+  margin-top: 10px;
 }
 
 

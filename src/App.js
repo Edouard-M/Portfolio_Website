@@ -20,7 +20,6 @@ function App() {
             <Route path="/" exact element={<LandingPage/>} />
           </Routes>
         </Router>
-        <Footer/>
     </div>
   );
 }
