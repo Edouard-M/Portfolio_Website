@@ -1,35 +1,6 @@
 import React from 'react'
 import Project from '../landing_page_components/Project'
-
-var project1 = {
-    title: "Shipmark",
-    subtitle: "A partnership with Airbus D&S",
-    text: "A project about something in the aim to upgrade something by using something with somebody.",
-    image: "shipmark.png",
-    button_color: "#C7E4F5",
-    github_link: "https://github.com/Edouard-M/Ship_Detection_Scripts/tree/main",
-    demo_link: "",
-};
-
-var project2 = {
-    title: "Blindar",
-    subtitle: "A school project",
-    text: "A project about something in the aim to upgrade something by using something with somebody.",
-    image: "blindar.png",
-    button_color: "#E9A072",
-    github_link: "https://blindar.fr/",
-    demo_link: "",
-};
-
-var project3 = {
-    title: "Jet Flight",
-    subtitle: "A personal project",
-    text: "A project about something in the aim to upgrade something by using something with somebody.",
-    image: "jet-flight.png",
-    button_color: "#73BBC5",
-    github_link: "https://jet-flight.fr/",
-    demo_link: "",
-};
+import { project1, project2, project3} from '../../data/ProjectsData'
 
 
 function Projects() {

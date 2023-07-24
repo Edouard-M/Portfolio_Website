@@ -12,9 +12,9 @@ function SocialLinks() {
         <Link to="https://github.com/Edouard-M" target="_blank" className="hero-social-link">
             <div className='hero-social-icon'><BiLogoGithub/></div>
         </Link>
-        <Link to="" target="_blank" className="hero-social-link">
+        <a href="mailto:edouard.mignien@gmail.com" className="hero-social-link">
             <div className='hero-social-icon'><BiLogoGmail/></div>
-        </Link>
+        </a>
     </div>
   )
 }
