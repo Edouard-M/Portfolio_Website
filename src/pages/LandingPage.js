@@ -3,6 +3,7 @@ import Header from '../components/generics/Header'
 import Hero from '../components/landing_page_sections/Hero'
 import About from '../components/landing_page_sections/About'
 import Skills from '../components/landing_page_sections/Skills'
+import Projects from '../components/landing_page_sections/Projects'
 
 
 
@@ -19,6 +20,9 @@ function LandingPage() {
           </section>
           <section id="skills" className='skills'>
             <Skills/>
+          </section>
+          <section id="projects" className='projects'>
+            <Projects/>
           </section>
         </div>
     </div>
