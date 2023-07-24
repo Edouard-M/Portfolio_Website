@@ -44,7 +44,7 @@ h2::after {
   height: 3px;
   background: var(--color-main);
   bottom: 0;
-  left: calc(50% - 68px);
+  left: calc(50% - 60px);
 }
 
 
@@ -304,7 +304,7 @@ h2::after {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  width: 1400px;
+  width: 1200px;
 }
 
 .about-h2{
@@ -433,6 +433,126 @@ h2::after {
   font-size: 18px;
   color: var(--color-text);
 }
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+
+#projects{
+  width: 100%;
+}
+
+.projects-container{
+  color: var(--color-text);
+  font-family: var(--font-Poppins);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.projects-project{
+  margin: 0px 40px 0px 40px;
+  width: 320px;
+}
+
+
+.project-image-container{
+  width: 320px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 65px 65px 65px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image{
+  width: 320px;
+}
+
+.project-title{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.project-subtitle{
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.project-text{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.project-point{
+  position:relative;
+  font-size: 52px;
+  color: var(--color-main);
+  top: -60px;
+  margin-bottom: -60px;
+}
+
+.project-button-row{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.project-button-github{
+  width: 110px;
+  height: 55px;
+  border-radius: 50px;
+  border: solid;
+  background-color: var(--color-text);
+  color: var(--color-white);
+  font-family: var(--font-Poppins);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: -2px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.project-button-github:hover{
+  background-color: var(--color-grey);
+  color: var(--color-text);
+}
+
+.project-button-demo{
+  border: solid;
+  width: 175px;
+  height: 55px;
+  border-radius: 50px;
+  background-color: var(--button-background-color);
+  color: var(--color-white);
+  font-family: var(--font-Poppins);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 38px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.project-button-demo:hover{
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
 
 
 /*--------------------------------------------------------------
