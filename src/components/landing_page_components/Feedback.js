@@ -1,15 +1,14 @@
 import React from 'react'
+import {BsPersonCircle} from 'react-icons/bs'
 
 
-const text = "Passionate about programming and algorithm. I aim to become a full-stack developer. During my different internships and must of all my personal practices, I acquired differents knowledge about software engineering";
-
-function Feedback() {
+function Feedback({name, subtitle1, subtitle2, text}) {
   return (
     <div className='feedback-container'>
-      <div className='feedback-image'></div>
-      <div className='feedback-name'>Alain Houelle</div>
-      <div className='feedback-subtitle'>Former internship supervisor & teacher</div>
-      <div className='feedback-subtitle'>Manager at Aresia Ozoir</div>
+      <div className='feedback-image'><BsPersonCircle className='feedback-icone'/></div>
+      <div className='feedback-name'>{name}</div>
+      <div className='feedback-subtitle'>{subtitle1}</div>
+      <div className='feedback-subtitle'>{subtitle2}</div>
       <div className='feedback-citation'><div className='feedback-quote feedback-rotate'>"</div><div className='feedback-text'>{text}</div><div className='feedback-quote'>"</div></div>
     </div>
   )

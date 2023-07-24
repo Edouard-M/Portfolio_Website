@@ -6,6 +6,7 @@ import Skills from '../components/landing_page_sections/Skills'
 import Projects from '../components/landing_page_sections/Projects'
 import Experiences from '../components/landing_page_sections/Experiences'
 import Feedbacks from '../components/landing_page_sections/Feedbacks'
+import Contact from '../components/landing_page_sections/Contact'
 
 
 
@@ -31,6 +32,9 @@ function LandingPage() {
           </section>
           <section id="feedbacks" className='feedbacks'>
             <Feedbacks/>
+          </section>
+          <section id="contact" className='contact'>
+            <Contact/>
           </section>
         </div>
     </div>
