@@ -44,7 +44,7 @@ h2::after {
   height: 3px;
   background: var(--color-main);
   bottom: 0;
-  left: calc(50% - 60px);
+  left: calc(50% - 50px);
 }
 
 
@@ -553,6 +553,143 @@ h2::after {
   color: var(--color-text);
 }
 
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+
+#experiences{
+  margin-bottom: 50px;
+}
+
+.experiences-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiences-container{
+  display: flex;
+  flex-direction: row;
+  width: 1070px;
+  gap: 0px;
+}
+
+.experiences-column{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.experiences-column-right{
+  padding-left: 100px;
+}
+
+.experiences-column::before{
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-main);
+  margin-left: 7px;
+  position: absolute;
+  margin-top: 60px;
+  z-index:0;
+}
+
+.experiences-subtitle{
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.experiences-experience{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.experience-title{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--color-main);
+}
+
+.experience-subtitle{
+  margin-top: 0px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+.experience-text{
+  margin-top: 6px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+.experience-list{
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--color-text);
+  left: 0px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+
+.experience-timeline{
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;  
+}
+
+.experience-circle{
+  width: 11px;
+  height: 11px;
+  border-radius: 50px;
+  background-color: var(--color-white);
+  border: solid;
+  border-color: var(--color-main);
+  z-index:1;
+}
+
+.experience-logo{
+  position:relative;
+  width: 60px;
+  left: -75px;
+  top: -25px;
+}
+
+.experiences-button{
+  margin-top: 40px;
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--color-second);
+  color: var(--color-white);
+  font-family: var(--font-Poppins);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  transition: all 0.5s;
+}
+
+.experiences-button:hover{
+  background-color: var(--color-white);
+  color: var(--color-text);
+  cursor:pointer;
+}
 
 
 /*--------------------------------------------------------------
