@@ -9,7 +9,6 @@
     --font-Poppins: "Poppins", sans-serif;
     --font-Open: "Open sans", sans-serif;
     --font-Bitter: "Passion One", sans-serif;
-    font-size-adjust: none;
   }
 
 html{
@@ -1013,7 +1012,7 @@ footer{
   }
 
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 10px){
   h2{
     font-size: 50px;
   }
