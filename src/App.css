@@ -427,13 +427,10 @@ h2::after {
   .about-text{
     margin-left: 50px;
     margin-right: 50px;
-    font-size: 15px;
+    font-size: 18px;
   }
   .about-subcolumn{
-    font-size: 14px;
-  }
-  h2{
-    font-size: 32px;
+    font-size: 17px;
   }
 }
 
@@ -494,6 +491,9 @@ h2::after {
 @media screen and (max-width: 890px) {
   .skills-container {
       flex-direction: column;
+  }
+  .skills-icone-text{
+    font-size: 20px;
   }
 }
 
@@ -626,11 +626,48 @@ h2::after {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 90px;
+    width: 480px;
+  }
+
+  .project-image-container{
+    width: 480px;
+    height: 375px;
+    border-radius: 65px 65px 65px 10px;
+  }
+
+  .project-image{
+    width: 480px;
+  }
+
+
+  .project-title{
+    font-size: 34px;
+  }
+
+  .project-subtitle{
+    font-size: 22px;
+  }
+
+  .project-text{
+    font-size: 20px;
+  }
+
+  .project-button-github{
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .project-button-demo{
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+    margin-left: 70px;
   }
 }
 
 /*--------------------------------------------------------------
-# Projects
+# Experiences
 --------------------------------------------------------------*/
 
 #experiences{
@@ -789,6 +826,21 @@ h2::after {
     margin-bottom: 50px;
   }
 
+  .experience-title{
+    font-size: 24px;
+  }
+
+  .experience-subtitle{
+    font-size: 18px;
+  }
+
+  .experience-text{
+    font-size: 16px;
+  }
+
+  .experience-list{
+    font-size: 15px;
+  }
 
 }
 
