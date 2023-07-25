@@ -474,6 +474,11 @@ h2::after {
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 @media screen and (max-width: 1125px) {
+
+  .about-sublist{
+    flex-direction: column;
+  }
+
   .about-h2{
     margin-top: 20px;
   }
@@ -494,23 +499,17 @@ h2::after {
     margin-right: auto;
   }
   .about-subtitle {
-    font-size: 30px;
+    font-size: 26px;
   }
   .about-text{
     margin-top: 50px;
     margin-bottom: 30px;
     margin-left: 50px;
     margin-right: 50px;
-    font-size: 23px;
+    font-size: 22px;
   }
   .about-subcolumn{
     font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .about-sublist{
-    flex-direction: column;
   }
 }
 
