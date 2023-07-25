@@ -8,7 +8,7 @@ function Experiences() {
     <div className='experiences-main'>
         <h2>Experiences<span className='point'>.</span></h2>
         <div className='experiences-container'>
-            <div className='experiences-column'>
+            <div className='experiences-column experiences-column-left'>
                 <div className='experiences-subtitle'>Education</div>
                 <Experience title={experience1.title} subtitle={experience1.subtitle} text={experience1.text} list={experience1.list} image={experience1.image}/>
                 <Experience title={experience2.title} subtitle={experience2.subtitle} text={experience2.text} list={experience2.list} image={experience2.image}/>

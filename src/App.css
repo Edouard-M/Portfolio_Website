@@ -288,6 +288,27 @@ h2::after {
 }
 
 
+@media screen and (max-width: 1062px) {
+  #hero {
+    background: var(--color-white);
+  }
+
+  .hero-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-social-link{
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -302,10 +323,9 @@ h2::after {
 .about-main{
   display: flex;
   flex-direction: row;
-  display: flex;
   justify-content: center;
   margin-top: 50px;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .about-h2{
@@ -320,11 +340,13 @@ h2::after {
   left: 0px;
 }
 
+
+
 .about-column-1{
   margin-top: 100px;
   flex-shrink: 0;
-  width: 400px;
-  height: 300px;
+  max-width: 400px;
+  max-height: 300px;
   border-radius: 25px;
   background: linear-gradient(141deg, rgba(96, 153, 221, 0.52) 0%, rgba(255, 255, 255, 0.52) 0.01%, rgba(222, 237, 255, 0.52) 46.42%, rgba(31, 84, 146, 0.52) 100%);
 }
@@ -335,10 +357,11 @@ h2::after {
 }
 
 .about-column-2{
-  height: 400px;
+  max-height: 400px;
   overflow: hidden;
   justify-content:right;
   margin: 0px 0px 0px 50px;
+  margin-left: clamp(10px, 2vw , 50px);
   display: flex;
   flex-direction: column;
 }
@@ -364,6 +387,7 @@ h2::after {
 
 .about-sublist{
   margin-top: 50px;
+  margin-top: clamp(10px, 2vw, 50px);
   display: flex;
   flex-direction: row;
 }
@@ -376,11 +400,41 @@ h2::after {
   font-weight: 400;
   line-height: 208%;
   margin-right: 100px;
-  white-space: nowrap;
+  margin-right: clamp(20px, 2.5vw, 100px);
 }
 
 .about-bold{
   font-weight: 700;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1125px) {
+  .about-main {
+      flex-direction: column;
+  }
+  .about-column-1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-column-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-text{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+  }
+  .about-subcolumn{
+    font-size: 14px;
+  }
+  h2{
+    font-size: 32px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -404,6 +458,8 @@ h2::after {
 
 .skills-icones-container{
   margin: 50px 100px 10px 100px;
+  margin-left: clamp(30px, 4vw , 100px);
+  margin-right: clamp(30px, 4vw , 100px);
   display: flex;
   flex-direction: column;
 }
@@ -433,6 +489,12 @@ h2::after {
 .skills-icone-text{
   font-size: 18px;
   color: var(--color-text);
+}
+
+@media screen and (max-width: 890px) {
+  .skills-container {
+      flex-direction: column;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -554,6 +616,19 @@ h2::after {
   color: var(--color-text);
 }
 
+@media screen and (max-width: 1150px) {
+  .projects-container {
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .projects-project{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Projects
 --------------------------------------------------------------*/
@@ -572,7 +647,7 @@ h2::after {
 .experiences-container{
   display: flex;
   flex-direction: row;
-  width: 1070px;
+  max-width: 1070px;
   gap: 0px;
   margin-top: 25px;
 }
@@ -693,6 +768,30 @@ h2::after {
   cursor:pointer;
 }
 
+.experiences-column-left > .experiences-experience > .experience-timeline > .experience-circle > .experience-logo{
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .experiences-container{
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experiences-column{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experiences-column-left{
+    padding-left: 100px;
+    margin-bottom: 50px;
+  }
+
+
+}
+
 /*--------------------------------------------------------------
 # Feedbacks
 --------------------------------------------------------------*/
@@ -705,6 +804,7 @@ h2::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px 50px 0px 50px;
   color: var(--color-text);
 }
 
@@ -712,7 +812,7 @@ h2::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 800px;
+  max-width: 800px;
   min-height: 270px;
 }
 
@@ -747,6 +847,7 @@ h2::after {
 .feedback-subtitle{
   font-size: 14px;
   font-weight: 300;
+  text-align: center;
   color: rgba(69, 80, 91, 0.70);
 }
 
