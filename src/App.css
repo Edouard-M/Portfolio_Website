@@ -1012,11 +1012,7 @@ footer{
   }
 
 
-@media screen and (max-width: 10px){
-  h2{
-    font-size: 50px;
-  }
-
+@media screen and (max-width: 1150px){
 
   #hero {
     background: var(--color-white);
@@ -1031,39 +1027,8 @@ footer{
     margin-left: auto;
   }
 
-  .hero-social-link{
-    margin-right: 40px;
-    margin-left: 40px;
-  }
-
-  .hero-title{
-    font-size: 74px ;
-  }
-  .hero-subtitle{
-    font-size: 37px ;
-  }
-  .hero-subtitle-2{
-    font-size: 37px ;
-  }
-
-  .hero-social-icon{
-    font-size: 40px;
-  }
-
-  .hero-animation {
-    height:60px;
-  }
-  .hero-animation > div > div {
-    margin-bottom: 2.2rem;
-  }
-
-
   .about-sublist{
     flex-direction: column;
-  }
-
-  .about-h2{
-    margin-top: 20px;
   }
 
   .about-main {
@@ -1081,30 +1046,9 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
-  .about-subtitle {
-    font-size: 26px;
-  }
-  .about-text{
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 20px;
-  }
-  .about-subcolumn{
-    font-size: 20px;
-  }
-
 
   .skills-container {
     flex-direction: column;
-  }
-  .skills-icone-text{
-    font-size: 24px;
-  }
-
-  .skills-icone{
-    font-size: 65px;
   }
 
   .skills-icones-row{
@@ -1120,45 +1064,6 @@ footer{
   .projects-project{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 90px;
-    width: 480px;
-  }
-
-  .project-image-container{
-    width: 480px;
-    height: 375px;
-    border-radius: 65px 65px 65px 10px;
-  }
-
-  .project-image{
-    width: 480px;
-  }
-
-
-  .project-title{
-    font-size: 38px;
-  }
-
-  .project-subtitle{
-    font-size: 30px;
-  }
-
-  .project-text{
-    margin-top: 15px;
-    font-size: 26px;
-  }
-
-  .project-button-github{
-    width: 160px;
-    height: 70px;
-    font-size: 24px;
-  }
-
-  .project-button-demo{
-    width: 250px;
-    height: 70px;
-    font-size: 24px;
-    margin-left: 70px;
   }
 
   .experiences-container{
@@ -1171,87 +1076,6 @@ footer{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-  }
-
-  .experiences-column-left{
-    padding-left: 100px;
-    margin-bottom: 50px;
-  }
-
-  .experiences-subtitle{
-    font-size: 32px;
-  }
-
-  .experience-timeline{
-    margin-top: 17px;
-  }
-
-  .experiences-column::before{
-    margin-top: 80px;
-  }
-
-  .experience-title{
-    font-size: 36px;
-  }
-
-  .experience-subtitle{
-    font-size: 30px;
-  }
-
-  .experience-text{
-    font-size: 23px;
-    margin-top: 15px;
-  }
-
-  .experience-list{
-    font-size: 21px;
-    margin-top: 10px;
-  }
-
-  .experiences-button{
-    width: 300px;
-    height: 80px;
-    font-size: 25px;
-  }
-
-  .feedback-name{
-    font-size: 30px;
-  }
-  .feedback-subtitle{
-    font-size: 24px;
-  }
-  .feedback-text{
-    font-size: 23px;
-  }
-  .feedback-citation{
-    margin-top: 30px;
-  }
-
-
-  .contact-button{
-    width: 300px;
-    height: 80px;
-    font-size: 25px;
-  }
-
-  .footer-name{
-    font-size: 30px;
-  }
-
-  .footer-social{
-    margin-top: 15px;
-    gap: 100px;
-  }
-
-  .footer-social-icon{
-    font-size: 40px;
-    width: 60px;
-    height: 60px;
-  }
-
-  .footer-credits{
-    margin-top: 10px;
-    font-size: 20px;
   }
 }
 
