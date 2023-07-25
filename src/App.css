@@ -48,6 +48,10 @@ h2::after {
   left: calc(50% - 50px);
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+}
 
 .header {
     display: flex;
@@ -313,6 +317,39 @@ h2::after {
 # About
 --------------------------------------------------------------*/
 
+.effect-block {
+		opacity: 100;
+		animation: text-visible 0.0001s linear forwards;
+		animation-delay: 1.5s;
+  }
+
+.effect-block:after {
+		content: "";
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 0%;
+		height: 100%;
+		background: blue;
+		animation: effect-block 2s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+		animation-delay: 1s;
+}
+
+@keyframes effect-block {
+	0% {
+		left: 0;
+		width: 0%;
+	}
+	50% {
+		left: 0;
+		width: 100%;
+	}
+	100% {
+		left: 100%;
+		width: 0%;
+	}
+}
+
 #about{
   height: auto;
   display: flex;
@@ -357,6 +394,7 @@ h2::after {
 }
 
 .about-column-2{
+  position: relative;
   max-height: 400px;
   overflow: hidden;
   justify-content:right;

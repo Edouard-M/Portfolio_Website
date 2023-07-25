@@ -1,4 +1,5 @@
 import React from 'react'
+import {Reveal} from '../animations/Reveal'
 
 function Experience({ title, subtitle, text, list, image }) {
 
@@ -17,12 +18,12 @@ function Experience({ title, subtitle, text, list, image }) {
     <div className='experiences-experience'>
       <div className='experience-timeline'><div className='experience-circle'><img className='experience-logo' src={require(`../../assets/icones/${image}`)} alt='sg'/></div></div>
       <div className='experience-container'>
-        <div className='experience-title'>{title}</div>
-        <div className='experience-subtitle'>{subtitle}</div>
-        <div className='experience-text'>{text}</div>
-        <ul className='experience-list'>
+      <Reveal><div className='experience-title'>{title}</div></Reveal>
+      <Reveal><div className='experience-subtitle'>{subtitle}</div></Reveal>
+      <Reveal><div className='experience-text'>{text}</div></Reveal>
+      <Reveal><ul className='experience-list'>
             {listItems}
-        </ul>
+        </ul></Reveal>
       </div>
     </div>
   )

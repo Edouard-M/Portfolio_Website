@@ -1,12 +1,13 @@
 import React from 'react'
 import Experience from '../landing_page_components/Experience'
 import {experience1, experience2, experience3, experience4, experience5, experience6} from '../../data/ExperiencesData'
+import {Reveal} from '../animations/Reveal'
 
 
 function Experiences() {
   return (
     <div className='experiences-main'>
-        <h2>Experiences<span className='point'>.</span></h2>
+        <div className='center'><Reveal><h2>Experiences<span className='point'>.</span></h2></Reveal></div>
         <div className='experiences-container'>
             <div className='experiences-column experiences-column-left'>
                 <div className='experiences-subtitle'>Education</div>
