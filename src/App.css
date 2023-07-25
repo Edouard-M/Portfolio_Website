@@ -67,7 +67,6 @@ h2::after {
     transition: all 0.5s;
     padding: 15px;
     overflow-y:visible;
-    line-height: 24px;
     text-align: start;
 }
 
@@ -388,7 +387,6 @@ h2::after {
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
-  line-height: 130%;
   margin-bottom: 20px;
 }
 
@@ -399,7 +397,6 @@ h2::after {
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
-  line-height: 130%;
 }
 
 .about-sublist{
@@ -415,7 +412,6 @@ h2::after {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 208%;
   margin-right: 100px;
   margin-right: clamp(20px, 2.5vw, 100px);
 }
@@ -523,7 +519,6 @@ h2::after {
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
-  line-height: 130%;
   margin-bottom: 10px;
   margin-top: 30px;
 }
@@ -532,7 +527,6 @@ h2::after {
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
-  line-height: 130%;
   margin-bottom: 20px;
 }
 
@@ -540,7 +534,6 @@ h2::after {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 130%;
   margin-bottom: 20px;
 }
 
@@ -1096,7 +1089,7 @@ footer{
     margin-bottom: 30px;
     margin-left: 50px;
     margin-right: 50px;
-    font-size: 22px;
+    font-size: 20px;
   }
   .about-subcolumn{
     font-size: 20px;
