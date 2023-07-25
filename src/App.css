@@ -751,6 +751,7 @@ h2::after {
   align-items: center;
   margin: 0px 50px 0px 50px;
   color: var(--color-text);
+  overflow: hidden;
 }
 
 .feedback-container{
@@ -759,6 +760,7 @@ h2::after {
   align-items: center;
   max-width: 800px;
   min-height: 270px;
+  height: 300px;
 }
 
 .feedback-image{
@@ -787,6 +789,7 @@ h2::after {
   display: flex;
   flex-direction: row;
   margin-top: 15px;
+  height: 100px;
 }
 
 .feedback-subtitle{
@@ -1097,6 +1100,14 @@ footer{
     margin-right: auto;
     width: 80%;
   }
+
+  .feedback-container{
+    height: 350px;
+  }
+
+  .feedback-citation{
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -1207,6 +1218,31 @@ footer{
   .feedbacks-main{
     margin: 0px 5px 0px 5px;
   }
+  .feedback-citation{
+    height: 150px;
+  }
+  .feedback-container{
+    height: 350px;
+  }
 
+}
+
+@media screen and (max-width: 500px){
+  .feedback-citation{
+    height: 220px;
+  }
+  .feedback-container{
+    height: 400px;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  .feedback-citation{
+    height: 400px;
+  }
+  .feedback-container{
+    height: 600px;
+  }
 }
 
