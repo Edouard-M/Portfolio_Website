@@ -16,7 +16,7 @@ function About() {
                 <Reveal><div className='about-text'>Passionate about programming and algorithm. I aim to become a full-stack developer. During my different internships and must of all my personal practices, I acquired differents knowledge about software engineering</div></Reveal>
                 <div className='about-sublist'>
                     <div className='about-subcolumn'>
-                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>Degree:</span> Master (2018 - 2023)</li></Reveal>
+                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>Degree:</span> Master</li></Reveal>
                     <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>City:</span> Paris, France</li></Reveal>
                     <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>Email:</span> edouard.mignien@gmail.com</li></Reveal>
                     </div>

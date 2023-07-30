@@ -293,6 +293,8 @@
 .shipmark_photo_carousel{
   display: flex;
   flex-direction: row;
+  position: relative;
+  width: 100%;
 }
 
 .shipmark_photo_carousel_button{
@@ -300,10 +302,22 @@
   width: 60px;
   height: 60px;
   font-size: 34px;
-  margin: auto 50px auto 50px;
+  /*margin: auto 50px auto 50px;*/
+  position: absolute;
   border-radius: 100%;
+  left: 0;
+  z-index: 4;
 
   transition: all 0.3s;
+}
+
+.shipmark_photo_carousel #left{
+  left: 50px;
+}
+
+.shipmark_photo_carousel #right{
+  right: 0;
+  left: calc(100% - 100px);
 }
 
 .shipmark_photo_carousel_button:hover{
@@ -323,6 +337,33 @@
 .shipmark_photo_carousel_container{
   display: flex;
   flex-direction: row;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.shipmark_photo_carousel_card{
+  scale: 0.7;
+  z-index: 2;
+  margin: 0px -3% 0px -3%;
+
+  transition: all 0.5s;
+}
+
+.shipmark_photo_carousel_container #back{
+  scale: 0.5;
+  z-index: 1;
+  margin: 0px -6% 0px -6%;
+}
+
+.shipmark_photo_carousel_container #hidden{
+  opacity: 0;
+  scale: 0.5;
+  z-index: 0;
+}
+
+.shipmark_photo_carousel_container #active{
+  scale: 1;
+  z-index: 3;
 }
 
 /*--------------------------------------------------------------
