@@ -4,18 +4,18 @@ const project1 = {
     text: "A project about something in the aim to upgrade something by using something with somebody.",
     image: "shipmark.png",
     button_color: "#C7E4F5",
-    github_link: "https://github.com/Edouard-M/Ship_Detection_Scripts/tree/main",
-    demo_link: "",
+    github_link: "https://github.com/Edouard-M/Shipmark-satellite-image-processing",
+    demo_link: "/shipmark/",
 };
 
 const project2 = {
-    title: "Blindar",
+    title: "Market App",
     subtitle: "A school project",
     text: "A project about something in the aim to upgrade something by using something with somebody.",
     image: "blindar.png",
     button_color: "#E9A072",
-    github_link: "https://blindar.fr/",
-    demo_link: "",
+    github_link: "https://github.com/Edouard-M/School-Java-Market-Project",
+    demo_link: "/marketapp/",
 };
 
 const project3 = {
@@ -25,7 +25,7 @@ const project3 = {
     image: "jet-flight.png",
     button_color: "#73BBC5",
     github_link: "https://jet-flight.fr/",
-    demo_link: "",
+    demo_link: "https://jet-flight.fr/",
 };
 
 

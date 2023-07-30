@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styles from '../../style/App.css';
 
 import {AiOutlineHome} from 'react-icons/ai'
 import {IoPersonOutline, IoDocumentTextOutline, IoCodeSlashSharp} from 'react-icons/io5'
@@ -40,9 +41,9 @@ function Navbar() {
  
   return (
     <div>
-      <nav className='navbar' id="navbar">
-        <ul className='navbar-ul'>
-          <li className='navbar-il'>
+      <nav className={styles.navbar} id='navbar'>
+        <ul className='navbar_ul'>
+          <li className='navbar_li'>
             <a href="#hero" onClick={() => handleClick('hero')} className="navbar-item" id={activeSection === 'hero' ? "active":""}> <div className='navbar-icon' ><AiOutlineHome/></div> <div className='navbar-text'><span>Home</span></div></a>
           </li>
           <li>
