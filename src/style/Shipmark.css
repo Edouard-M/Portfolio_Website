@@ -47,7 +47,7 @@
 }
 
 .shimpark_main{
-  z-index: 1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,6 +67,7 @@
 }
 
 .shipmark_navbar{
+  z-index: 10;
   position: fixed;
   background: var(--color-shipmark-background); /* radial vs main vs background */
   color: var(--color-shipmark-text);
@@ -193,10 +194,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .shipmark_photo_button{
-  margin: 50px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
   padding: 10px 20px 10px 20px;
   border-radius: 50px;
   background: var(--color-shipmark-radial);
@@ -229,15 +231,12 @@
 
 .shipmark_photo_card{
   display: flex;
-
 }
 
 .shipmark_photo_card_image{
   width: auto;
   height: auto;
   padding: 10px;
-
-  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -295,6 +294,7 @@
   flex-direction: row;
   position: relative;
   width: 100%;
+  z-index: 0;
 }
 
 .shipmark_photo_carousel_button{
@@ -339,12 +339,18 @@
   flex-direction: row;
   transition: all 0.5s;
   position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  overflow-x: hidden;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .shipmark_photo_carousel_card{
   scale: 0.7;
   z-index: 2;
-  margin: 0px -3% 0px -3%;
+  margin: 0px -5% 0px -5%;
 
   transition: all 0.5s;
 }
@@ -352,7 +358,7 @@
 .shipmark_photo_carousel_container #back{
   scale: 0.5;
   z-index: 1;
-  margin: 0px -6% 0px -6%;
+  margin: 0px -12% 0px -12%;
 }
 
 .shipmark_photo_carousel_container #hidden{
@@ -381,8 +387,6 @@
   width: 40vw;
   height: 40vw;
   padding: 10px;
-
-  overflow: hidden;
 
   display: flex;
   align-items: flex-start;

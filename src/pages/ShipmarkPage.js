@@ -12,7 +12,7 @@ function ShipmarkPage() {
           <section id='shipmark_photo'>
             <h2 className='shipmark_h2'>Select the image</h2>
             <ShipmarkCarousel/>
-            <button className='shipmark_photo_button'>AI Generate</button>
+            <a href="#shipmark_ai"  className='shipmark_photo_button'>AI Generate</a>
           </section>
           <section id='shipmark_ai'>
             <h2 className='shipmark_h2 '>AI output</h2>
