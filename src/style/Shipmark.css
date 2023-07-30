@@ -1,0 +1,281 @@
+:root {
+    --color-shipmark-background: #2B2D31;
+    --color-shipmark-dark: #17181C;
+    --color-shipmark-second: #717689;
+    --color-shipmark-grey: #9C9D9F;
+    --color-shipmark-radial: radial-gradient(100% 100% at 50.00% 0%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.02) 100%);
+    --color-shipmark-radial-hover: radial-gradient(100% 100% at 50.00% 0%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.15) 100%);
+    --color-shipmark-text: #DFDFDF;
+    --color-shipmark-white: #FFFFFF;
+    --color-shipmark-debug: #006400;
+    --font-shipmark-inter : "Inter", sans-serif;
+  }
+
+
+.shimpark_body{
+  display: flex;
+  flex-direction: column;
+  color: var(--color-shipmark-text);
+}
+
+.shimpark_center{
+  display: flex;
+  justify-content: center;  /* center width */
+  align-items: center;  /* center height */
+}
+
+.shipmark_h2{
+    color: var(--color-shipmark-text);
+    background: rgba(255, 255, 255, 0);
+    font-family: var(--font-shipmark-inter);
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.shipmark_h2::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.shimpark_main{
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 200px;
+}
+
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.shipmark_navbar_background{
+  position: fixed;
+  background: var(--color-shipmark-dark); /* dark vs background  */
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.shipmark_navbar{
+  position: fixed;
+  background: var(--color-shipmark-background); /* radial vs main vs background */
+  color: var(--color-shipmark-text);
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.60), 0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(12px);
+}
+
+.shipmark_navbar_button{
+  width: stretch;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  padding: 5px 15px 5px 15px;
+  margin: 20px 20px 10px 20px;
+  border-radius: 50px;
+  background: var(--color-shipmark-main); /* main vs radial */
+  color: var(--color-shipmark-white);
+  text-decoration: none;
+  font-family: var(--font-shipmark-inter);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.60), 0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s;
+}
+
+.shipmark_navbar_button:hover{
+  background: var(--color-shipmark-radial-hover);
+  /*cursor: pointer;*/
+  scale: 1.1;
+}
+
+.shipmark_navbar_button_logo{
+  font-size: 32px;
+}
+
+.shipmark_link{
+  width: 100%;
+  height: 100%;
+  background-color: #006400;
+}
+
+.shipmark_navbar_title{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-family: var(--font-shipmark-inter);
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+.shipmark_navbar_logo{
+  width: 40px;
+  background: var(--color-shipmark-text);
+  border-radius: 50px;
+  padding: 3px 10px 3px 10px;
+}
+
+.shipmark_navbar_section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  gap: 15px;
+  font-family: var(--font-shipmark-inter);
+  color: var(--color-shipmark-text);
+  font-size: 16px;
+  padding: 20px 0px 20px 0px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.shipmark_navbar_section::before{
+  content: "";
+  display: block;
+  background-color: var(--color-shipmark-second);
+  width: 30%;
+  height: 2px;
+  top: -1px;
+  position: absolute;
+  left: calc(50% - 17%);
+}
+
+.shipmark_navbar_section::after{
+  content: "";
+  display: block;
+  background-color: var(--color-shipmark-second);
+  width: 30%;
+  height: 2px;
+  bottom: -1px;
+  position: absolute;
+  left: calc(50% - 17%);
+}
+
+.shipmark_navbar_section:hover{
+  background-color: var(--color-shipmark-second);
+  color: var(--color-shipmark-dark);
+  cursor: pointer;
+  font-weight: 700;
+  scale: 1.1;
+}
+
+.shipmark_navbar_section_icone{
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+
+/*--------------------------------------------------------------
+# Photo section
+--------------------------------------------------------------*/
+
+#shipmark_photo{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shipmark_photo_card{
+  width: 20vw;
+  height: 20vw;
+  padding: 10px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-start;
+
+  border-radius: 40px;
+  /*background: var(--color-shipmark-radial);*/
+  background: var(--color-shipmark-radial);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.60), 0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(12px);
+
+  transition: all 0.5s;
+}
+
+.shipmark_photo_card:hover{
+  transform: rotateX(50deg) rotateY(-50deg);
+}
+
+.shipmark_photo_image{
+  align-self: stretch;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------------------
+# AI section
+--------------------------------------------------------------*/
+#shipmark_ai{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shipmark_ai_card{
+  width: 40vw;
+  height: 40vw;
+  padding: 10px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-start;
+
+  border-radius: 40px;
+  /*background: var(--color-shipmark-radial);*/
+  background: var(--color-shipmark-radial);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.60), 0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(12px);
+
+  transition: all 0.5s;
+}
+
+.shipmark_ai_card:hover{
+  transform: rotateX(-15deg) rotateY(15deg);
+}
+
+.shipmark_ai_image{
+  align-self: stretch;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*--------------------------------------------------------------
+# Annotation section
+--------------------------------------------------------------*/
+#shipmark_annotation{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

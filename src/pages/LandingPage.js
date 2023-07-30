@@ -7,6 +7,8 @@ import Projects from '../components/landing_page_sections/Projects'
 import Experiences from '../components/landing_page_sections/Experiences'
 import Feedbacks from '../components/landing_page_sections/Feedbacks'
 import Contact from '../components/landing_page_sections/Contact'
+import Footer from '../components/generics/Footer';
+import '../style/App.css';
 
 
 
@@ -14,7 +16,7 @@ function LandingPage() {
   return (
     <div>
         <Header/>
-        <div className='landing-page'>
+        <div className='landing_page'>
           <section id="hero" className='hero'>
             <Hero/>
           </section>
@@ -37,6 +39,7 @@ function LandingPage() {
             <Contact/>
           </section>
         </div>
+        <Footer/>
     </div>
     
   )

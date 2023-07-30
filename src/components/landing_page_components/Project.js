@@ -12,7 +12,7 @@ function Project({ title, subtitle, text, image, button_color, github_link, demo
         <div className='project-point'>.</div>
         <div className='project-button-row'>
             <div><Link to={github_link} target="_blank" ><button className='project-button-github'>Github</button></Link></div>
-            <div style={{ color: 'red', }}><button className='project-button-demo' style={{ '--button-background-color': button_color}}>Open Demo</button></div>
+            <div style={{ color: 'red', }}><Link to={demo_link} target="_blank" ><button className='project-button-demo' style={{ '--button-background-color': button_color}}>Open Demo</button></Link></div>
         </div>
     </div>
   )
