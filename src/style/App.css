@@ -477,7 +477,7 @@ h2::after {
 }
 
 .skills-icone-container:hover{
-  transform: rotateX(-180deg) rotateY(180deg);
+  transform: rotateX(-50deg) rotateY(50deg);
 }
 
 .skills-icone-text{
