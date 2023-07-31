@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ShipmarkPhotoCard from './ShipmarkPhotoCard'
 import {BiLeftArrow, BiRightArrow} from 'react-icons/bi'
 
@@ -7,9 +7,9 @@ var tab = [
   {translate: "75", scale: "0.7", zindex: "4", opacity: "1"},
   {translate: "175", scale: "0.5", zindex: "3", opacity: "1"},
   {translate: "175", scale: "0.5", zindex: "2", opacity: "0"},
-  {translate: "175", scale: "0.5", zindex: "1", opacity: "0"},
-  {translate: "175", scale: "0.5", zindex: "0", opacity: "0"},
-  {translate: "-175", scale: "0.5", zindex: "1", opacity: "0"},
+  {translate: "175", scale: "0.5", zindex: "2", opacity: "0"},
+  {translate: "175", scale: "0.5", zindex: "2", opacity: "0"},
+  {translate: "-175", scale: "0.5", zindex: "2", opacity: "0"},
   {translate: "-175", scale: "0.5", zindex: "2", opacity: "0"},
   {translate: "-175", scale: "0.5", zindex: "3", opacity: "1"},
   {translate: "-75", scale: "0.7", zindex: "4", opacity: "1"}
@@ -67,6 +67,10 @@ function ShipmarkCarousel({activeCard, setActiveCard, data}) {
 
     setActivePosition(position);
   };
+
+
+  useEffect(() => {
+  }, [activeCard]);
 
     
   return (

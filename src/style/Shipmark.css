@@ -46,6 +46,19 @@
   background: rgba(255, 255, 255, 0);
 }
 
+.shipmark_h1{
+  display: flex;
+  text-align: center;
+  font-family: var(--font-shipmark-inter);
+  font-size: 46px;
+}
+
+.shipmark_h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .shimpark_main{
   z-index: 0;
   display: flex;
@@ -54,6 +67,9 @@
   margin-left: 200px;
 }
 
+.shipmark_text_container{
+  width: clamp(200px, 60vw, 1000px);
+}
 
 /*--------------------------------------------------------------
 # Navbar
@@ -187,7 +203,7 @@
 --------------------------------------------------------------*/
 
 #shipmark_photo{
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
   width: 100%;
   display: flex;
@@ -358,7 +374,7 @@
   z-index: 2;
   position: absolute;
 
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 
 .shipmark_photo_carousel_container #back{
@@ -386,7 +402,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 300;
 }
+
+.shipmark_ai_text_container{
+  display: flex;
+  flex-direction: column;
+  width: clamp(100px, 40vw, 1000px);
+  font-family: var(--font-shipmark-inter);
+  color: var(--color-shipmark-text);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.shipmark_ai_text{
+  font-size: 18px;
+  margin: 0px auto 5px auto;
+  font-weight: 300;
+  display: flex;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.shipmark_ai_text_list{
+  font-size: 16px;
+  margin: 0px auto 5px auto;
+  font-weight: 300;
+  color: var(--color-shipmark-grey);
+  display: flex;
+  text-align: center;
+}
+
 
 .shipmark_ai_card{
   width: 40vw;
