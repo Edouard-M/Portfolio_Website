@@ -4,7 +4,6 @@ import {
   Route
 } from "react-router-dom";
 import LandingPage from './pages/LandingPage';
-import ShipmarkPage from './pages/ShipmarkPage';
 import Loader from './components/generics/Loader';
 
 
