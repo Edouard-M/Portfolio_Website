@@ -15,7 +15,8 @@ const project2 = {
     image: "market.png",
     button_color: "#E9A072",
     github_link: "https://github.com/Edouard-M/School-Java-Market-Project",
-    demo_link: "/marketapp/",
+    demo_link: "https://github.com/Edouard-M/School-Java-Market-Project",
+   // demo_link: "/marketapp/",
 };
 
 const project3 = {
