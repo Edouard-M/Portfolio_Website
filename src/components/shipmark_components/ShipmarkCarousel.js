@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ShipmarkPhotoCard from './ShipmarkPhotoCard'
 import {BiLeftArrow, BiRightArrow} from 'react-icons/bi'
 
@@ -67,10 +67,6 @@ function ShipmarkCarousel({activeCard, setActiveCard, data}) {
 
     setActivePosition(position);
   };
-
-
-  useEffect(() => {
-  }, [activeCard]);
 
     
   return (
