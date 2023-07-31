@@ -1034,11 +1034,6 @@ footer{
 
 @media screen and (max-width: 1150px){
 
-  body{
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-
   #hero {
     background: var(--color-white);
   }
