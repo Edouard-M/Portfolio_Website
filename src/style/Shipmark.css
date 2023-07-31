@@ -289,6 +289,14 @@
 # Photo Carousel
 --------------------------------------------------------------*/
 
+.shipmark_photo_carousel_main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
 .shipmark_photo_carousel{
   display: flex;
   flex-direction: row;
@@ -340,17 +348,15 @@
   transition: all 0.5s;
   position: relative;
   width: 100%;
-  height: auto;
+  height: clamp(350px, 35vw, 35vw);
   overflow: hidden;
   overflow-x: hidden;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .shipmark_photo_carousel_card{
   scale: 0.7;
   z-index: 2;
-  margin: 0px -5% 0px -5%;
+  position: absolute;
 
   transition: all 0.5s;
 }
@@ -358,7 +364,6 @@
 .shipmark_photo_carousel_container #back{
   scale: 0.5;
   z-index: 1;
-  margin: 0px -12% 0px -12%;
 }
 
 .shipmark_photo_carousel_container #hidden{
