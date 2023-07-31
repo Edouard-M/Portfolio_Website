@@ -476,3 +476,30 @@
   justify-content: center;
   align-items: center;
 }
+
+
+@media screen and (max-width: 1150px){
+  .shipmark_navbar{
+    display: none;
+  }
+
+
+
+  .shimpark_main{
+    margin: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 900px){
+  .shipmark_navbar{
+    display: none;
+  }
+
+  .shimpark_main{
+    margin: 0;
+  }
+
+}
+

@@ -12,7 +12,7 @@ const project2 = {
     title: "Market App",
     subtitle: "A school project",
     text: "A project about something in the aim to upgrade something by using something with somebody.",
-    image: "blindar.png",
+    image: "market.png",
     button_color: "#E9A072",
     github_link: "https://github.com/Edouard-M/School-Java-Market-Project",
     demo_link: "/marketapp/",
