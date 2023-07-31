@@ -555,5 +555,13 @@
     height: 75vw;
   }
 
+  .shipmark_photo_carousel #left{
+    left: 25px;
+  }
+  
+  .shipmark_photo_carousel #right{
+    left: calc(100% - 75px);
+  }
+
 }
 
