@@ -24,7 +24,7 @@ const project3 = {
     text: "A project about something in the aim to upgrade something by using something with somebody.",
     image: "jet-flight.png",
     button_color: "#73BBC5",
-    github_link: "https://jet-flight.fr/",
+    github_link: "https://github.com/Edouard-M",
     demo_link: "https://jet-flight.fr/",
 };
 

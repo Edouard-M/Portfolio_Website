@@ -10,7 +10,7 @@ const feedback2 = {
     name: "Yunshi TAN",
     subtitle1: "Former internship supervisor",
     subtitle2: "Manager at Société Générale",
-    text: "J’ai encadré, en tant que responsable du Lab’Innovation de la société ARESIA Ozoir, M Mignien pour son stage ING4. Ses compétences et sa motivation se confirment ici une fois de plus.",
+    text: "~~~~~~~ ~~~~~~~~~~~~~~ ~~~~ ~~~~~ ~~~ ~~~~~~ ~~~~~ ~~~~~ ~~~~~~ ~~~~ ~~~~~~ ~~~ ~~~~~ ~~~~~~ ~~~~~ ~~~~~ ~~~ ~~~~~~~ ~~~~~ ~~~~~~ ~~~~ ~~~ ~~~~~~ ~~~~ ~~~ ~~~~~ ~~~~ ~~~~~~~",
 };
 
 
