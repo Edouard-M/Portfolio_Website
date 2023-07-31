@@ -17,7 +17,6 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" element={<LandingPage/>} />
-            <Route path="/shipmark" exact element={<ShipmarkPage/>} />
           </Routes>
         </Router>
     </div>
