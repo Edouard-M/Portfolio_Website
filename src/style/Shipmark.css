@@ -364,7 +364,7 @@
   transition: all 0.5s;
   position: relative;
   width: 100%;
-  height: clamp(350px, 35vw, 35vw);
+  height: clamp(50px, 35vw, 35vw);
   overflow: hidden;
   overflow-x: hidden;
 }
@@ -483,22 +483,76 @@
     display: none;
   }
 
-
-
   .shimpark_main{
     margin: 0;
+  }
+
+  .shipmark_ai_text_container{
+    width: 80vw;
+  }
+
+  .shipmark_ai_card{
+    width: 40vw;
+    height: 40vw;
+    padding: 5px;
+  }
+
+  .shipmark_ai_text{
+    font-size: 16px;
+  }
+  
+  .shipmark_ai_text_list{
+    font-size: 14px;
+  }
+
+
+  .shipmark_photo_card_sub_logo{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .shipmark_photo_card_sub_text{
+    font-family: var(--font-shipmark-inter);
+    font-size: 13px;
+  }
+  
+  .shipmark_photo_card_sub_text_subtitle{
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  .shipmark_photo_card_image{
+    padding: 5px;
+  }
+
+  .shipmark_photo_image{
+    border-radius: 30px;
+  }
+
+  .shipmark_photo_card_image{
+    border-radius: 30px;
   }
 
 }
 
-
-@media screen and (max-width: 900px){
-  .shipmark_navbar{
+@media screen and (max-width: 870px){
+  .shipmark_photo_card_sub{
     display: none;
   }
+}
 
-  .shimpark_main{
-    margin: 0;
+
+
+@media screen and (max-width: 700px){
+
+  .shipmark_ai_text_container{
+    width: 90vw;
+  }
+
+  .shipmark_ai_card{
+    width: 75vw;
+    height: 75vw;
   }
 
 }
