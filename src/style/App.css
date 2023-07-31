@@ -463,7 +463,7 @@ h2::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .skills-icone{
@@ -477,7 +477,7 @@ h2::after {
 }
 
 .skills-icone-container:hover{
-  transform: rotateX(-50deg) rotateY(50deg);
+  transform: rotateX(-20deg) rotateY(20deg);
 }
 
 .skills-icone-text{
