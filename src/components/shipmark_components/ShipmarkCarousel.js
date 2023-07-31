@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import ShipmarkPhotoCard from './ShipmarkPhotoCard'
-import {imageData1 ,imageData2, imageData3, imageData4, imageData5, imageData6, imageData7, imageData8, imageData9, imageData10} from '../../data/ShipmarkData'
 import {BiLeftArrow, BiRightArrow} from 'react-icons/bi'
-
-var data = [imageData1, imageData2, imageData3, imageData4, imageData5, imageData6, imageData7, imageData8, imageData9, imageData10]
 
 var tab = [
   {translate: "0", scale: "1", zindex: "5", opacity: "1"},
@@ -21,12 +18,10 @@ var tab = [
 var tabCard = [tab[0], tab[1], tab[2], tab[3], tab[4], tab[5], tab[6], tab[7], tab[8], tab[9]]
 
 
-function ShipmarkCarousel() {
+function ShipmarkCarousel({activeCard, setActiveCard, data}) {
 
   const max_card = (tabCard.length);
-  const card_init = 0;
-  const [activeCard, setActiveCard] = useState(card_init);
-  const [activePosition, setActivePosition] = useState(card_init);
+  const [activePosition, setActivePosition] = useState(0);
 
   const handleClickLeft = () => {
     var card = activeCard+1;
@@ -71,7 +66,6 @@ function ShipmarkCarousel() {
     }
 
     setActivePosition(position);
-
   };
 
     
@@ -93,8 +87,6 @@ function ShipmarkCarousel() {
           </div>
           <div onClick={() => handleClickRight()} className='shipmark_photo_carousel_button shipmark_center' id='right'><BiRightArrow/></div>
       </div>
-      <span>activeCard = {activeCard}</span>
-      <span>Photo ID = {data[activeCard].id}</span>
     </div>
   )
 }
