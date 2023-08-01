@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/generics/Header'
 import Hero from '../components/landing_page_sections/Hero'
+import ScrollDown from '../components/generics/ScrollDown'
 import About from '../components/landing_page_sections/About'
 import Skills from '../components/landing_page_sections/Skills'
 import Projects from '../components/landing_page_sections/Projects'
@@ -19,6 +20,7 @@ function LandingPage() {
         <div className='landing_page'>
           <section id="hero" className='hero2'>
             <Hero/>
+            <ScrollDown/>
           </section>
           <div className='landing_page_rest'>
           <section id="about" className='about'>

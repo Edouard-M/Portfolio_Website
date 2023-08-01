@@ -1260,6 +1260,93 @@ footer{
   right: 15px;
 }
 
+/*--------------------------------------------------------------
+# ScrollDownButton
+--------------------------------------------------------------*/
+.mouse-scroll {
+  position: fixed;
+  margin: auto;
+  transform: translateY(-50%);
+  bottom: 0;
+  scale: 2;
+  z-index: 1;
+}
+.mouse-scroll span{
+  display: block;
+  width: 5px; 
+  height: 5px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       transform: rotate(45deg);
+       transform: rotate(45deg);
+  border-right: 2px solid var(--color-second); 
+  border-bottom: 2px solid var(--color-main);
+  margin: 0 0 3px 5px;
+}
+.mouse-scroll .mouse {
+  height: 21px;
+  width: 14px;
+  border-radius: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 2px solid var(--color-main);;
+  top: 170px;
+}
+.mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+.mouse-scroll .down-arrow-1, .mouse-scroll .down-arrow-2, .mouse-scroll .down-arrow-3 {
+  animation: mouse-scroll 1s infinite; 
+}
+
+.mouse-croll .down-arrow-1 {
+  animation-delay: .1s;
+  animation-direction: alternate;
+}
+.mouse-scroll .down-arrow-2 {
+  animation-delay: .2s; 
+  animation-direction: alternate;
+}
+.mouse-scroll .down-arrow-3 {
+   animation-delay: .3s;
+   animation-direction: alternate;
+}
+.mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block; 
+  margin: 5px auto;
+  background: var(--color-second);
+  position: relative;
+}
+.mouse-scroll .mouse-in {
+ animation: animated-mouse 1.2s ease infinite;
+}
+
+@keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -1301,6 +1388,10 @@ footer{
 
 
 @media screen and (max-width: 1150px){
+
+  .mouse-scroll {
+    scale: 1.6;
+  }
 
   #hero {
     background: var(--color-white);
@@ -1393,6 +1484,15 @@ footer{
 }
 
 @media screen and (max-width: 700px){
+
+  .mouse-scroll {
+    scale: 4;
+    transform: rotate(180deg) translateY(75%);
+  }
+
+  .mouse{
+    display: none;
+  }
 
   .hero-main{
     scale: 0.5;
