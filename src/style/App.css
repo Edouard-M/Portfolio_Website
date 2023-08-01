@@ -51,6 +51,8 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--color-second);;
+  -webkit-text-stroke: 1px var(--color-text);
 }
 
 h2::after {
@@ -172,6 +174,14 @@ h2::after {
   font-style: normal;
 }
 
+.landing_page_rest{
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  z-index: 2;
+  box-shadow: 0 2rem 5rem 1.5rem var(--color-main);
+}
+
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
@@ -182,18 +192,75 @@ h2::after {
   background-size: cover;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .point{
   color: var(--color-main);
 }
 
+.heading {
+  position: absolute;
+  font-family: var(--font-Poppins);
+  font-weight: 700;
+  transform:  rotate(-30deg) skew(25deg) translateY(-15%);
+  font-size: 12rem;
+  -webkit-text-stroke: 3px var(--color-main);
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  z-index: -1;
+  opacity: 0.3;
+  animation: headanime 1.5s linear;
+  transition: all 0.5s ease;
+}
+
+@keyframes headanime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
 .hero-main{
-  flex-direction: row;
+  flex-shrink: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+
   color: var(--color-text);
-  margin-right: 30%;
+  width: 100%;
+
+
+  position:fixed;
+}
+
+.home_left{
+  position: relative;
+  transform: rotate(-30deg) skew(25deg) translateY(-30%);
+  left: -13rem;
+  bottom: -7rem;
+}
+
+.home_right {
+  position: relative;
+  right: 0rem;
+  transform: translateY(-35%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-subtitle{
@@ -244,37 +311,6 @@ h2::after {
   100% {margin-top: 0;}
 }
 
-/*--------------------------------------------------------------
-# Hero
---------------------------------------------------------------*/
-
-.heading {
-  position: absolute;
-  font-family: var(--font-Poppins);
-  font-weight: 700;
-  left: 90%;
-  bottom: 30%;
-  transform: translate(-50%, -50%) rotate(-30deg);
-  font-size: 15rem;
-  -webkit-text-stroke: 3px var(--color-main);
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  z-index: -1;
-  opacity: 0.3;
-  animation: headanime 1.5s linear;
-  transition: all 0.5s ease;
-  width: 100%;
-  height: auto;
-}
-
-@keyframes headanime {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
 .home_left-title {
   font-family: "Poppins", sans-serif;
   font-size: 60px;
@@ -338,18 +374,6 @@ h2::after {
   opacity: 1;
 }
 
-.home_left{
-
-}
-
-.home_right {
-  position: relative;
-  left: 100%;
-  transform: translateY(-35%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .home_icon {
   display: flex;
   transform-style: preserve-3d;
@@ -404,7 +428,6 @@ h2::after {
 .home_icon li:hover span {
   color: var(--color-white);
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
 }
 .home_icon li:hover span:nth-child(5) {
   transform: translate(4rem, -4rem);
@@ -427,10 +450,10 @@ h2::after {
   opacity: 0.2;
 }
 .home_icon li:nth-child(1):hover span {
-  background: var(--color-second);
+  background: var(--color-main);
 }
 .home_icon li:nth-child(2):hover span {
-  background: var(--color-second);
+  background: var(--color-main);
 }
 .home_icon li:nth-child(3):hover span {
   background: var(--color-second);
@@ -446,13 +469,14 @@ h2::after {
 .home_icon li:nth-child(3):not(:hover) span:nth-child(2) {animation: hover-animation2 3s infinite;}
 .home_icon li:nth-child(3):not(:hover) span:nth-child(1) {animation: hover-animation1 3s infinite;}
 
+/*
 .home_icon li:nth-child(2):not(:hover) span:nth-child(5) {animation: hover-animation5 4s infinite;}
 .home_icon li:nth-child(2):not(:hover) span:nth-child(4) {animation: hover-animation4 4s infinite;}
 .home_icon li:nth-child(2):not(:hover) span:nth-child(3) {animation: hover-animation3 4s infinite;}
 .home_icon li:nth-child(2):not(:hover) span:nth-child(2) {animation: hover-animation2 4s infinite;}
 .home_icon li:nth-child(2):not(:hover) span:nth-child(1) {animation: hover-animation1 4s infinite;}
 
-/*.home_icon li:nth-child(1):not(:hover) span:nth-child(5) {animation: hover-animation5 5s infinite;}
+.home_icon li:nth-child(1):not(:hover) span:nth-child(5) {animation: hover-animation5 5s infinite;}
 .home_icon li:nth-child(1):not(:hover) span:nth-child(4) {animation: hover-animation4 5s infinite;}
 .home_icon li:nth-child(1):not(:hover) span:nth-child(3) {animation: hover-animation3 5s infinite;}
 .home_icon li:nth-child(1):not(:hover) span:nth-child(2) {animation: hover-animation2 5s infinite;}
@@ -1257,6 +1281,8 @@ footer{
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    scale: 0.7;
+    transform: translateX(15%);
   }
 
   .hero-title{
@@ -1336,36 +1362,16 @@ footer{
 
 @media screen and (max-width: 700px){
 
+  .hero-main{
+    scale: 0.5;
+  }
+
   .navbar{
     display: none;
   }
 
   h2{
     font-size: 28px;
-  }
-
-  .hero-title{
-    font-size: 30px;
-  }
-  .hero-subtitle{
-    font-size: 16px;
-  }
-  .hero-subtitle-2{
-    font-size: 16px;
-  }
-  .hero-animation {
-    height:24px;
-  }
-  .hero-animation > div > div {
-    margin-bottom: 4.1rem;
-  }
-  .hero-social-icon{
-    font-size: 20px;
-  }
-  .hero-button{
-    width: 170px;
-    height: 40px;
-    font-size: 13px;
   }
 
   .about-column-1{
@@ -1451,7 +1457,13 @@ footer{
 
 }
 
+
 @media screen and (max-width: 500px){
+
+  .hero-main{
+    scale: 0.4;
+  }
+
   .feedback-citation{
     height: 220px;
   }
@@ -1462,6 +1474,10 @@ footer{
 
 
 @media screen and (max-width: 400px){
+
+  .hero-main{
+    scale: 0.3;
+  }
   .feedback-citation{
     height: 400px;
   }

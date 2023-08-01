@@ -1,6 +1,7 @@
 import React from 'react'
 import {BiLogoLinkedin, BiLogoGithub, BiLogoGmail} from 'react-icons/bi'
 import {Reveal} from '../animations/Reveal'
+import { Link } from "react-router-dom";
 
 function Hero3() {
   return (
@@ -18,6 +19,7 @@ function Hero3() {
     <div className="home_right">
       <ul className="home_icon">
         <li>
+          <Link to="https://www.linkedin.com/in/edouard-mignien/" target="_blank">
           <span></span>
           <span></span>
           <span></span>
@@ -25,8 +27,10 @@ function Hero3() {
           <span>
             <i className="home_logo"><BiLogoLinkedin/></i>
           </span>
+          </Link>
         </li>
         <li>
+          <Link to="https://github.com/Edouard-M" target="_blank">
           <span></span>
           <span></span>
           <span></span>
@@ -34,8 +38,10 @@ function Hero3() {
           <span>
             <i className="home_logo"><BiLogoGithub/></i>
           </span>
+          </Link>
         </li>
         <li>
+          <Link to="mailto:edouard.mignien@gmail.com">
           <span></span>
           <span></span>
           <span></span>
@@ -43,10 +49,11 @@ function Hero3() {
           <span>
             <i className="home_logo"><BiLogoGmail/></i>
           </span>
+          </Link>
         </li>
       </ul>
     </div>
-    <span className="heading">HOME</span>
+    <span className="heading">EDOUARD</span>
   </div>
   )
 }

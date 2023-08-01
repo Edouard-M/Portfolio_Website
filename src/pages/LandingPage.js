@@ -20,6 +20,7 @@ function LandingPage() {
           <section id="hero" className='hero2'>
             <Hero3/>
           </section>
+          <div className='landing_page_rest'>
           <section id="about" className='about'>
             <About/>
           </section>
@@ -38,6 +39,7 @@ function LandingPage() {
           <section id="contact" className='contact'>
             <Contact/>
           </section>
+          </div>
         </div>
         <Footer/>
     </div>
