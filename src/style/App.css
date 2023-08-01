@@ -1624,7 +1624,7 @@ footer{
 
   .hero-main{
     scale: 0.5;
-    transform: translateX(25%) translateY(-20%);
+    transform: translateX(20%) translateY(-20%);
   }
 }
 
@@ -1633,7 +1633,7 @@ footer{
 
   .hero-main{
     scale: 0.5;
-    transform: translateX(30%) translateY(-20%);
+    transform: translateX(25%) translateY(-20%);
   }
   .feedback-citation{
     height: 400px;
@@ -1647,7 +1647,7 @@ footer{
 
   .hero-main{
     scale: 0.45;
-    transform: translateX(35%) translateY(-20%);
+    transform: translateX(30%) translateY(-20%);
   }
 }
 
