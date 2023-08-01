@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8e85271.css",
-    "main.js": "/static/js/main.47a281a1.js",
+    "main.css": "/static/css/main.71ac9aa6.css",
+    "main.js": "/static/js/main.c2863701.js",
     "static/media/me_laptop.png": "/static/media/me_laptop.3e84c2aa6911af09b6ab.png",
     "static/media/jet-flight.png": "/static/media/jet-flight.969ec4303588253b5a7f.png",
     "static/media/blindar.png": "/static/media/blindar.30fb1ecfa7786382fe7c.png",
@@ -18,11 +18,11 @@
     "static/media/2e1142a8c.jpg": "/static/media/2e1142a8c.de9c9e5bd45b332d7a0c.jpg",
     "static/media/2e189becf.jpg": "/static/media/2e189becf.94e14b54b1678ecaff62.jpg",
     "index.html": "/index.html",
-    "main.a8e85271.css.map": "/static/css/main.a8e85271.css.map",
-    "main.47a281a1.js.map": "/static/js/main.47a281a1.js.map"
+    "main.71ac9aa6.css.map": "/static/css/main.71ac9aa6.css.map",
+    "main.c2863701.js.map": "/static/js/main.c2863701.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8e85271.css",
-    "static/js/main.47a281a1.js"
+    "static/css/main.71ac9aa6.css",
+    "static/js/main.c2863701.js"
   ]
 }
