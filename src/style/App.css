@@ -183,6 +183,20 @@ h2::after {
   background-color: var(--color-white);
   z-index: 2;
   box-shadow: 0 2rem 5rem 1.5rem var(--color-main);
+  border-top: solid 5px var(--color-main);
+}
+
+.landing_page_rest::before{
+  content: " ";
+  position: relative;
+  display: none;
+  width: 12%;
+  border-radius: 50px;
+  height: 10px;
+  background: var(--color-text);
+  top: -8px;
+  left: 44%;
+  z-index: 50;
 }
 
 /*--------------------------------------------------------------
@@ -1483,6 +1497,10 @@ footer{
 
   .heading{
     display: none;
+  }
+
+  .landing_page_rest::before{
+    display:flex;
   }
 
   .home_left{
