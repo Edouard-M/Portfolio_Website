@@ -53,6 +53,9 @@ function Hero3() {
         </li>
       </ul>
     </div>
+    <span className="home_click_me_1">click me</span>
+    <span className="home_click_me_2">click me</span>
+    <span className="home_click_me_3">click me</span>
     <span className="heading">EDOUARD</span>
   </div>
   )

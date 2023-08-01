@@ -263,6 +263,25 @@ h2::after {
   align-items: center;
 }
 
+.home_click_me_1{
+  position: absolute;
+  transform: rotate(-30deg) skew(25deg) translateY(675%) translateX(-455%);
+  font-size: 1rem;
+  opacity: 0.4;
+}
+.home_click_me_2{
+  position: absolute;
+  transform: rotate(-30deg) skew(25deg) translateY(675%) translateX(-175%);
+  font-size: 1rem;
+  opacity: 0.4;
+}
+.home_click_me_3{
+  position: absolute;
+  transform: rotate(-30deg) skew(25deg) translateY(675%) translateX(100%);
+  font-size: 1rem;
+  opacity: 0.4;
+}
+
 .hero-subtitle{
   font-size: 32px;
 }
