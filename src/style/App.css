@@ -1630,8 +1630,8 @@ footer{
 @media screen and (max-width: 400px){
 
   .hero-main{
-    scale: 0.4;
-    transform: translateX(35%);
+    scale: 0.5;
+    transform: translateX(30%);
   }
   .feedback-citation{
     height: 400px;
@@ -1640,6 +1640,15 @@ footer{
     height: 600px;
   }
 }
+
+@media screen and (max-width: 300px){
+
+  .hero-main{
+    scale: 0.45;
+    transform: translateX(35%);
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Scrollbar
