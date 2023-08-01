@@ -21,9 +21,12 @@ html{
     scroll-behavior: smooth;
 }
 
-
 li {
   list-style: none;
+}
+
+.li_style{
+  list-style: inside;
 }
 
 a {
@@ -45,7 +48,7 @@ h2{
   font-size: 38px;
   font-weight: 600;
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 50px;
   padding-bottom: 15px;
   position: relative;
   display: flex;
@@ -579,6 +582,7 @@ h2::after {
 }
 
 #about{
+  margin-top: 10px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -868,6 +872,7 @@ h2::after {
 --------------------------------------------------------------*/
 
 #experiences{
+  box-sizing:content-box;
   margin-bottom: 50px;
 }
 
@@ -893,6 +898,7 @@ h2::after {
   flex-direction: column;
   position: relative;
   overflow-y: hidden;
+  box-sizing: content-box;
 }
 
 .experiences-column-right{
@@ -921,6 +927,11 @@ h2::after {
   display: flex;
   flex-direction: row;
   margin-top: 15px;
+  box-sizing: content-box;
+}
+
+.experience-container{
+  box-sizing: content-box;
 }
 
 .experience-title{
@@ -947,7 +958,8 @@ h2::after {
 }
 
 .experience-list{
-  margin-top: 2px;
+  margin-top: 5px;
+  margin-bottom: 7px;
   font-size: 13px;
   font-weight: 300;
   color: var(--color-text);
@@ -971,6 +983,7 @@ h2::after {
   border: solid;
   border-color: var(--color-main);
   z-index:1;
+  box-sizing: content-box;
 }
 
 .experience-logo{
@@ -1505,3 +1518,27 @@ footer{
   }
 }
 
+/*--------------------------------------------------------------
+# Scrollbar
+--------------------------------------------------------------*/
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--color-text);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: var(--color-main);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track:hover{
+  background: var(--color-grey);
+}

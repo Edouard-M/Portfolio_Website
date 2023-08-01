@@ -13,7 +13,7 @@ function About() {
             <div className='about-column-2'>
                 <Reveal><h2 className='about-h2'>About<span className='point'>.</span></h2></Reveal>
                 <Reveal><span className='about-subtitle '>Fullstack Junior Developer / young graduate</span></Reveal>
-                <Reveal><div className='about-text'>Passionate about programming and algorithm what I love in fullstack development is the capability to create and sublimate great Backend structure. During my different internships and must of all my personal practices, I acquired differents knowledge about software engineering that I'd be delighted to share with you.</div></Reveal>
+                <Reveal><div className='about-text'>Passionate about programming and algorithm what I love in fullstack development is the capability to create and sublimate great Backend structure. During my different internships and must of all my personal practices, I acquired different knowledges in software engineering that I'd be delighted to share with you.</div></Reveal>
                 <div className='about-sublist'>
                     <div className='about-subcolumn'>
                     <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>Degree:</span> Master</li></Reveal>

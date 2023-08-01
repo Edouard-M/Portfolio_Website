@@ -9,7 +9,7 @@ function Experience({ title, subtitle, text, list, image }) {
     }
 
     const listItems = list.map(item =>
-        <li key={item.text}>
+        <li key={item.text} className='li_style'>
           {item.text}
         </li>
       );

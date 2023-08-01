@@ -31,6 +31,7 @@
     font-size: 36px;
     font-weight: 600;
     margin: 0px;
+    margin-top: 1rem;
     padding-top: 30px;
     padding-bottom: 15px;
     position: relative;
@@ -51,12 +52,16 @@
   text-align: center;
   font-family: var(--font-shipmark-inter);
   font-size: 46px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .shipmark_h3{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .shimpark_main{
@@ -439,6 +444,9 @@
   width: 40vw;
   height: 40vw;
   padding: 10px;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   display: flex;
   align-items: flex-start;

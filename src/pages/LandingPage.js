@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/generics/Header'
-import Hero3 from '../components/landing_page_sections/Hero3'
+import Hero from '../components/landing_page_sections/Hero'
 import About from '../components/landing_page_sections/About'
 import Skills from '../components/landing_page_sections/Skills'
 import Projects from '../components/landing_page_sections/Projects'
@@ -18,7 +18,7 @@ function LandingPage() {
         <Header/>
         <div className='landing_page'>
           <section id="hero" className='hero2'>
-            <Hero3/>
+            <Hero/>
           </section>
           <div className='landing_page_rest'>
           <section id="about" className='about'>
