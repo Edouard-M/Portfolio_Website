@@ -1,6 +1,7 @@
 import React from 'react'
 import {Reveal} from '../animations/Reveal'
 import {FromLeft} from '../animations/FromLeft'
+import {aboutData} from '../../data/AboutData'
 
 function About() {
 
@@ -12,18 +13,18 @@ function About() {
             </div>
             <div className='about-column-2'>
                 <Reveal><h2 className='about-h2'>About<span className='point'>.</span></h2></Reveal>
-                <Reveal><span className='about-subtitle '>Fullstack Junior Developer / young graduate</span></Reveal>
-                <Reveal><div className='about-text'>Passionate about programming and algorithm what I love in fullstack development is the capability to create and sublimate great Backend structure. During my different internships and must of all my personal practices, I acquired different knowledges in software engineering that I'd be delighted to share with you.</div></Reveal>
+                <Reveal><span className='about-subtitle '>{aboutData.title}</span></Reveal>
+                <Reveal><div className='about-text'>{aboutData.text}</div></Reveal>
                 <div className='about-sublist'>
                     <div className='about-subcolumn'>
-                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>Degree:</span> Master</li></Reveal>
-                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>City:</span> Paris, France</li></Reveal>
-                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>Email:</span> edouard.mignien@gmail.com</li></Reveal>
+                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>{aboutData.list[0].title}</span> {aboutData.list[0].text}</li></Reveal>
+                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>{aboutData.list[1].title}</span> {aboutData.list[1].text}</li></Reveal>
+                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>{aboutData.list[2].title}</span> {aboutData.list[2].text}</li></Reveal>
                     </div>
                     <div className='about-subcolumn'>
-                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>Diploma:</span> Software Engineer</li></Reveal>
-                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>School:</span> ECE Paris - Engineering School</li></Reveal>
-                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>Phone:</span> (+33) 6 73 60 98 81</li></Reveal>
+                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>{aboutData.list[3].title}</span> {aboutData.list[3].text}</li></Reveal>
+                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>{aboutData.list[4].title}</span> {aboutData.list[4].text}</li></Reveal>
+                    <Reveal><li style={{"marginBottom":"5px"}}> <span className='about-bold'>{aboutData.list[5].title}</span> {aboutData.list[5].text}</li></Reveal>
                     </div>
                 </div>
             </div>

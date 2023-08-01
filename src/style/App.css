@@ -1199,6 +1199,7 @@ footer{
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
+  z-index: 2;
 }
 
 .footer-name{
@@ -1287,8 +1288,7 @@ footer{
   height: 21px;
   width: 14px;
   border-radius: 10px;
-  -webkit-transform: none;
-  -ms-transform: none;
+  transform: none;
   transform: none;
   border: 2px solid var(--color-main);;
   top: 170px;

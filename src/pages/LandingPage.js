@@ -42,8 +42,8 @@ function LandingPage() {
             <Contact/>
           </section>
           </div>
+            <Footer/>
         </div>
-        <Footer/>
     </div>
     
   )
