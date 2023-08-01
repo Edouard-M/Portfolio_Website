@@ -1267,7 +1267,7 @@ footer{
 .mouse-scroll {
   position: fixed;
   margin: auto;
-  transform: translateY(-50%) translateX(50%);
+  transform: translateY(-50%) translateX(40%);
   bottom: 0;
   scale: 2;
   z-index: 1;
@@ -1483,7 +1483,7 @@ footer{
 
   .mouse-scroll {
     scale: 4;
-    transform: rotate(180deg) translateY(75%) translateX(-40%);
+    transform: rotate(180deg) translateY(75%) translateX(-30%);
   }
 
   .mouse{
