@@ -11,9 +11,25 @@
     --font-Bitter: "Passion One", sans-serif;
   }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 body {
     margin: 0;
@@ -162,7 +178,7 @@ h2::after {
 #hero{
   width: 100%;
   height: 100vh;
-  background: url("../assets/background/background.png") top right no-repeat;
+  /*background: url("../assets/background/background.png") top right no-repeat;*/
   background-size: cover;
   position: relative;
   display: flex;
@@ -175,16 +191,9 @@ h2::after {
 }
 
 .hero-main{
-  flex-direction: column;
+  flex-direction: row;
   color: var(--color-text);
   margin-right: 30%;
-}
-
-.hero-title{
-  font-size: 64px;
-  font-weight: 600;
-  margin: 0;
-  margin: 5px 0px 5px 0px;
 }
 
 .hero-subtitle{
@@ -195,62 +204,6 @@ h2::after {
   display: flex;
   flex-direction: row;
   font-size: 32px;
-}
-
-.hero-button{
-  width: 230px;
-  height: 65px;
-  border-radius: 50px;
-  border: 0px;
-  background-color: var(--color-main);
-  color: var(--color-white);
-  font-family: var(--font-Poppins);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  margin-top: 30px;
-  margin-left: 0px;
-  transition: all 0.3s;
-}
-
-.hero-button:hover{
-  background-color: var(--color-second);
-  color: var(--color-white);
-  cursor:pointer;
-  scale: 1.2;
-}
-
-
-.hero-social{
-  display:flex;
-  flex-direction:row;
-  margin-top: 10px;
-  margin-left: 0px;
-}
-
-.hero-social-link{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  margin-right: 70px;
-  overflow: visible;
-  color: var(--color-main);
-  transition: all 0.3s;
-}
-
-.hero-social-link:hover{
-  background:var(--color-second);
-  color: var(--color-white);
-}
-
-.hero-social-icon{
-  font-size: 26px;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  justify-content: center;
 }
 
 .hero-animation {
@@ -291,6 +244,260 @@ h2::after {
   100% {margin-top: 0;}
 }
 
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+
+.heading {
+  position: absolute;
+  font-family: var(--font-Poppins);
+  font-weight: 700;
+  left: 90%;
+  bottom: 30%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 15rem;
+  -webkit-text-stroke: 3px var(--color-main);
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  z-index: -1;
+  opacity: 0.3;
+  animation: headanime 1.5s linear;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes headanime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.home_left-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--color-second);;
+  -webkit-text-stroke: 2px var(--color-text);
+}
+.home_left-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-white);
+}
+.home_btn {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2rem;
+  padding: 1.5rem 3rem;
+  color: var(--color-main);
+  border: 3px solid var(--color-main);
+  box-shadow: inset 0 0 20px 0 var(--color-main), 0 0 20px 0 var(--color-main);
+  text-shadow: 0 0 3px #fff, 0 0 20px var(--color-main);
+  transition: all 0.2s linear;
+}
+.home_btn::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background-color: var(--color-main);
+  width: 100%;
+  height: 100%;
+  top: 120%;
+  left: 0;
+  transform: perspective(10px) rotateX(10deg) scale(1, 0.35);
+  filter: blur(5.5rem);
+  opacity: 0.7;
+}
+.home_btn:hover {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  text-shadow: none;
+  transform: translateY(-3px);
+}
+.home_btn:active {
+  transform: translateY(-1px);
+}
+.home_btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 7rem 1.5rem var(--color-main);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.home_btn:hover::after {
+  opacity: 1;
+}
+
+.home_left{
+
+}
+
+.home_right {
+  position: relative;
+  left: 100%;
+  transform: translateY(-35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_icon {
+  display: flex;
+  transform-style: preserve-3d;
+  transform: rotate(-30deg) skew(25deg);
+  margin-top: 20rem;
+}
+.home_icon li {
+  position: relative;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 0 3rem;
+}
+.home_icon li::before {
+  content: "";
+  position: absolute;
+  bottom: -0.8rem;
+  left: 0;
+  width: 100%;
+  height: 0.8rem;
+  background: var(--color-text);
+  transform-origin: top;
+  transform: skewX(-45deg);
+}
+.home_icon li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.84rem;
+  width: 0.84rem;
+  height: 100%;
+  background: var(--color-text);
+  transform-origin: right;
+  transform: skewY(-43deg);
+}
+.home_icon li span {
+  /*font-size: 4.5rem;*/
+  font-size: 3rem; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--color-main);
+  border: 5px solid var(--color-main);
+  transition: all 0.5s;
+}
+
+.home_icon li:hover span {
+  color: var(--color-white);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.home_icon li:hover span:nth-child(5) {
+  transform: translate(4rem, -4rem);
+  opacity: 1;
+}
+.home_icon li:hover span:nth-child(4) {
+  transform: translate(3rem, -3rem);
+  opacity: 0.8;
+}
+.home_icon li:hover span:nth-child(3) {
+  transform: translate(2rem, -2rem);
+  opacity: 0.6;
+}
+.home_icon li:hover span:nth-child(2) {
+  transform: translate(1rem, -1rem);
+  opacity: 0.4;
+}
+.home_icon li:hover span:nth-child(1) {
+  transform: translate(0rem, 0rem);
+  opacity: 0.2;
+}
+.home_icon li:nth-child(1):hover span {
+  background: var(--color-second);
+}
+.home_icon li:nth-child(2):hover span {
+  background: var(--color-second);
+}
+.home_icon li:nth-child(3):hover span {
+  background: var(--color-second);
+}
+
+.home_logo{
+  display: flex;
+}
+
+.home_icon li:nth-child(3):not(:hover) span:nth-child(5) {animation: hover-animation5 3s infinite;}
+.home_icon li:nth-child(3):not(:hover) span:nth-child(4) {animation: hover-animation4 3s infinite;}
+.home_icon li:nth-child(3):not(:hover) span:nth-child(3) {animation: hover-animation3 3s infinite;}
+.home_icon li:nth-child(3):not(:hover) span:nth-child(2) {animation: hover-animation2 3s infinite;}
+.home_icon li:nth-child(3):not(:hover) span:nth-child(1) {animation: hover-animation1 3s infinite;}
+
+.home_icon li:nth-child(2):not(:hover) span:nth-child(5) {animation: hover-animation5 4s infinite;}
+.home_icon li:nth-child(2):not(:hover) span:nth-child(4) {animation: hover-animation4 4s infinite;}
+.home_icon li:nth-child(2):not(:hover) span:nth-child(3) {animation: hover-animation3 4s infinite;}
+.home_icon li:nth-child(2):not(:hover) span:nth-child(2) {animation: hover-animation2 4s infinite;}
+.home_icon li:nth-child(2):not(:hover) span:nth-child(1) {animation: hover-animation1 4s infinite;}
+
+/*.home_icon li:nth-child(1):not(:hover) span:nth-child(5) {animation: hover-animation5 5s infinite;}
+.home_icon li:nth-child(1):not(:hover) span:nth-child(4) {animation: hover-animation4 5s infinite;}
+.home_icon li:nth-child(1):not(:hover) span:nth-child(3) {animation: hover-animation3 5s infinite;}
+.home_icon li:nth-child(1):not(:hover) span:nth-child(2) {animation: hover-animation2 5s infinite;}
+.home_icon li:nth-child(1):not(:hover) span:nth-child(1) {animation: hover-animation1 5s infinite;}*/
+
+@keyframes hover-animation5 {
+  0% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white); color: var(--color-main);}
+  25% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white); color: var(--color-main);}
+  50% {transform: translate(4rem, -4rem); opacity: 1; background: var(--color-main); color: var(--color-white);}
+  75% {transform: translate(4rem, -4rem); opacity: 1; background: var(--color-main); color: var(--color-white);}
+  100% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white); color: var(--color-main);}
+}
+
+@keyframes hover-animation4 {
+  0% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+  25% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+  50% {transform: translate(3rem, -3rem); opacity: 0.8; background: var(--color-main);}
+  75% {transform: translate(3rem, -3rem); opacity: 0.8; background: var(--color-main);}
+  100% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+}
+
+@keyframes hover-animation3 {
+  0% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+  25% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+  50% {transform: translate(2rem, -2rem); opacity: 0.6; background: var(--color-main);}
+  75% {transform: translate(2rem, -2rem); opacity: 0.6; background: var(--color-main);}
+  100% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+}
+
+@keyframes hover-animation2 {
+  0% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+  25% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+  50% {transform: translate(1rem, -1rem); opacity: 0.4; background: var(--color-main);}
+  75% {transform: translate(1rem, -1rem); opacity: 0.4; background: var(--color-main);}
+  100% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+}
+
+@keyframes hover-animation1 {
+  0% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+  25% {transform: translate(0rem, 0rem); opacity: 1; background: var(--color-white);}
+  50% {transform: translate(0rem, -0rem); opacity: 0.2; background: var(--color-main);}
+  75% {transform: translate(0rem, -0rem); opacity: 0.2; background: var(--color-main);}
+  100% {transform: translate(0rem, 0rem); opacity: 1 ; background: var(--color-white);}
+}
+
 
 /*--------------------------------------------------------------
 # About
@@ -309,7 +516,6 @@ h2::after {
 		position: absolute;
 		width: 0%;
 		height: 100%;
-		background: blue;
 		animation: effect-block 2s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 		animation-delay: 1s;
 }

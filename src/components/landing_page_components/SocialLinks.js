@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 function SocialLinks() {
   return (
-    <div className='hero-social'>
-        <Link to="https://www.linkedin.com/in/edouard-mignien/" target="_blank" className="hero-social-link">
-            <div className='hero-social-icon'><BiLogoLinkedin/></div>
+    <div className='hero-social-2'>
+        <Link to="https://www.linkedin.com/in/edouard-mignien/" target="_blank" className="hero-social2-card">
+            <div className='hero-social2-icon'><BiLogoLinkedin/></div>
         </Link>
-        <Link to="https://github.com/Edouard-M" target="_blank" className="hero-social-link">
-            <div className='hero-social-icon'><BiLogoGithub/></div>
+        <Link to="https://github.com/Edouard-M" target="_blank" className="hero-social2-card">
+            <div className='hero-social2-icon'><BiLogoGithub/></div>
         </Link>
-        <a href="mailto:edouard.mignien@gmail.com" className="hero-social-link">
-            <div className='hero-social-icon'><BiLogoGmail/></div>
-        </a>
+        <Link to="mailto:edouard.mignien@gmail.com" className="hero-social2-card">
+            <div className='hero-social2-icon'><BiLogoGmail/></div>
+        </Link>
     </div>
   )
 }
