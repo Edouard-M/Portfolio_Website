@@ -1481,6 +1481,16 @@ footer{
 
 @media screen and (max-width: 700px){
 
+  .heading{
+    display: none;
+  }
+
+  .home_left{
+    transform: rotate(-30deg) skew(25deg) translateY(50%);
+    left: -13rem;
+    bottom: -7rem;
+  }
+
   .mouse-scroll {
     scale: 4;
     transform: rotate(180deg) translateY(75%) translateX(-30%);
@@ -1491,7 +1501,7 @@ footer{
   }
 
   .hero-main{
-    scale: 0.5;
+    scale: 0.8;
   }
 
   .navbar{
@@ -1585,11 +1595,19 @@ footer{
 
 }
 
+@media screen and (max-width: 560px){
+
+  .hero-main{
+    scale: 0.7;
+  }
+}
+
 
 @media screen and (max-width: 500px){
 
   .hero-main{
-    scale: 0.4;
+    scale: 0.6;
+    transform: translateX(20%);
   }
 
   .feedback-citation{
@@ -1600,11 +1618,20 @@ footer{
   }
 }
 
+@media screen and (max-width: 450px){
+
+  .hero-main{
+    scale: 0.5;
+    transform: translateX(25%);
+  }
+}
+
 
 @media screen and (max-width: 400px){
 
   .hero-main{
-    scale: 0.3;
+    scale: 0.4;
+    transform: translateX(35%);
   }
   .feedback-citation{
     height: 400px;
