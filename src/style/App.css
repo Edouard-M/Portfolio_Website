@@ -1267,7 +1267,7 @@ footer{
 .mouse-scroll {
   position: fixed;
   margin: auto;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(50%);
   bottom: 0;
   scale: 2;
   z-index: 1;
@@ -1276,10 +1276,7 @@ footer{
   display: block;
   width: 5px; 
   height: 5px;
-  -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-       transform: rotate(45deg);
-       transform: rotate(45deg);
+  transform: rotate(45deg) ;
   border-right: 2px solid var(--color-second); 
   border-bottom: 2px solid var(--color-main);
   margin: 0 0 3px 5px;
@@ -1288,7 +1285,6 @@ footer{
   height: 21px;
   width: 14px;
   border-radius: 10px;
-  transform: none;
   transform: none;
   border: 2px solid var(--color-main);;
   top: 170px;
@@ -1487,7 +1483,7 @@ footer{
 
   .mouse-scroll {
     scale: 4;
-    transform: rotate(180deg) translateY(75%);
+    transform: rotate(180deg) translateY(75%) translateX(-40%);
   }
 
   .mouse{
