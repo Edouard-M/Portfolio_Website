@@ -1,6 +1,6 @@
 import React from 'react'
 import Experience from '../landing_page_components/Experience'
-import {experience1, experience2, experience3, experience4, experience5, experience6} from '../../data/ExperiencesData'
+import {experience1, experience2, experience3, experience4, experience5, experience6} from '../../data/french/ExperiencesData'
 import {Reveal} from '../animations/Reveal'
 
 

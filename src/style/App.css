@@ -84,11 +84,14 @@ h2::after {
     top: 0;
     left: 0;
     bottom: 0;
+    width: auto;
     z-index: 9997;
     transition: all 0.5s;
     padding: 15px;
     overflow-y:visible;
     text-align: start;
+    box-sizing: content-box;
+    pointer-events: none;
 }
 
 /*--------------------------------------------------------------
@@ -100,6 +103,7 @@ h2::after {
 }
 
 .navbar_ul {
+    pointer-events: auto;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1123,6 +1127,7 @@ h2::after {
   font-size: 48px;
   cursor: pointer;
   transition: all 0.2s;
+  box-sizing:content-box;
 }
 
 .feedbacks-button:hover{
@@ -1591,9 +1596,9 @@ footer{
   }
 
   .feedbacks-button{
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
   }
   .feedbacks-left{
     margin-right: 10px;

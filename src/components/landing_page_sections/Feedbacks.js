@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Feedback from '../landing_page_components/Feedback'
 import {IoIosArrowForward, IoIosArrowBack} from 'react-icons/io'
-import { feedback1, feedback2} from '../../data/FeedbacksData'
+import { feedback1, feedback2} from '../../data/french/FeedbacksData'
 import {Reveal} from '../animations/Reveal'
 
 var feedback_data = feedback1;

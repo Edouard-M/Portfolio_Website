@@ -1,6 +1,6 @@
 import React from 'react'
 import Project from '../landing_page_components/Project'
-import { project1, project2, project3} from '../../data/ProjectsData'
+import { project1, project2, project3} from '../../data/english/ProjectsData'
 import {Reveal} from '../animations/Reveal'
 
 

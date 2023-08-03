@@ -1,7 +1,7 @@
 import React from 'react'
 import {Reveal} from '../animations/Reveal'
 import {FromLeft} from '../animations/FromLeft'
-import {aboutData} from '../../data/AboutData'
+import {aboutData} from '../../data/english/AboutData'
 
 function About() {
 
