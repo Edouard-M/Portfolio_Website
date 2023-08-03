@@ -95,6 +95,35 @@ h2::after {
 }
 
 /*--------------------------------------------------------------
+# Language Button
+--------------------------------------------------------------*/
+.landingpage_language_button{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background: var(--color-main);
+  width: 9rem;
+  height: 3.2rem;
+  border-radius: 10rem;
+  top: 2%;
+  right: 2%;
+  color:var(--color-white);
+
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 50;
+  transition: all 0.5s;
+}
+
+.landingpage_language_button:hover{
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
 .navbar_li {
@@ -1499,6 +1528,12 @@ footer{
 }
 
 @media screen and (max-width: 700px){
+
+  .landingpage_language_button{
+    scale: 0.7;
+    right: -2%;
+    top: 1%;
+  }
 
   .heading{
     display: none;
