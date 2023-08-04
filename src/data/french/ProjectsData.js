@@ -2,8 +2,8 @@ const section = "Projets"
 
 const project1 = {
     title: "Shipmark",
-    subtitle: "En partenariat avec Airbus D&S",
-    text: "A project about something in the aim to upgrade something by using something with somebody.",
+    subtitle: "Projet avec Airbus D&S",
+    text: "Ce projet vise à détecter les navires en mer afin d'identifier leur position et leur direction. Il utilise Python et la technologie de Machine Learning avec Airbus D&S.",
     image: "shipmark.png",
     button_color: "#C7E4F5",
     github_link: "https://github.com/Edouard-M/Shipmark-satellite-image-processing",
@@ -14,7 +14,7 @@ const project1 = {
 const project2 = {
     title: "App Supermaché",
     subtitle: "Projet scolaire",
-    text: "A project about something in the aim to upgrade something by using something with somebody.",
+    text: "Ce projet vise à créer l'infrastructure informatique complète d'un marché. En utilisant des compétences Backend et Frontend appris en classe (Note : 19.5/20)",
     image: "market.png",
     button_color: "#E9A072",
     github_link: "https://github.com/Edouard-M/School-Java-Market-Project",
@@ -25,8 +25,8 @@ const project2 = {
 
 const project3 = {
     title: "Jet Flight",
-    subtitle: "Personal personel",
-    text: "A project about something in the aim to upgrade something by using something with somebody.",
+    subtitle: "Projet personel",
+    text: "Jet Flight est une simulation qui vise à recréer la sensation de piloter un avion de chasse avec des commandes de vol amusantes et accessibles basés sur le modèle physique réel.",
     image: "jet-flight.png",
     button_color: "#73BBC5",
     github_link: "https://github.com/Edouard-M",

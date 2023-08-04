@@ -33,15 +33,15 @@ var experience4 = {
     title:"Stage - Ingénieur Logiciel Web Backend",
     subtitle:"Société Générale - 6 mois",
     text:"Développement en production de nouvelles fonctionalitées de la plateforme 'Database Management Services'",
-    list:[{id: 1, text: "Développeur backend Python pour les services cloud"}, {id: 2, text: "Framework Backend: Flask"}, {id: 3, text: "Utilisation d'ORM: Sqlalchemy"}, {id: 4, text: "Gestion de bases de données postgreSQL"}, {id: 5, text: "Tests et mocks des api dans une optique de TDD"},  {id: 6, text: "Environnement de production: Jenkins & Github actions"},],
+    list:[{id: 1, text: "Développeur backend Python pour les services cloud"}, {id: 2, text: "Framework Backend: Flask"}, {id: 3, text: "Utilisation d'API REST"}, {id: 4, text: "Gestion de bases de données postgreSQL"}, {id: 5, text: "Tests et mocks des api dans une optique de TDD"},  {id: 6, text: "Environnement de production: Jenkins & Github actions"},],
     image:"sg.png",
 }
 
 var experience5 = {
     title:"Stage - Développeur Python",
     subtitle:"Airbus Defence and Space - 5 mois",
-    text:"Développer un logiciel de traitement d’images dans le but de reconnaître et d’annoter automatiquement un dataset d’images satellites avec Airbus Defence and Space.",
-    list:[{id: 1, text: "Développement Python d’un algorithme de traitement d’images"}, {id: 2, text: "Développement de scripts Python"}, {id: 3, text: "Mise en place d’un algorithme de Deep Learning destiné à la reconnaissance automatique de navires en mer"}, {id: 4, text: "Outils de gestion de projets : Notion, Google Collab"},],
+    text:"Développer un logiciel de traitement d’images dans le but de reconnaître et d’annoter automatiquement un dataset d’images satellites.",
+    list:[{id: 1, text: "Mise en place d’un algorithme de Deep Learning destiné à la reconnaissance automatique de navires en mer"}, {id: 2, text: "Scripts Python pour modèles de données"}, {id: 3, text: "Développement Python d’un algorithme de traitement d’images"}, {id: 4, text: "Outils de gestion de projets : Notion, Google Collab"},],
     image:"airbus.png",
 }
 
