@@ -1,5 +1,12 @@
+const section = {
+    section:"Expériences",
+    subtitle1:"Education",
+    subtitle2:"Professionnel",
+    download_button:"Télécharger CV",
+}
+
 var experience1 = {
-    title:"ECE - Engineering School",
+    title:"ECE - Ecole d'ingénieurs",
     subtitle:"“Ecole Centrale d’Electronique” - 2018 - 2023",
     text:"Développeur Web Backend de services cloud.",
     list: [{id: 1, text: "Developpement WEB"}, {id: 2, text: "Programmation Python / Java / C / C++ / HTML / CSS"}, {id: 3, text: "Gestion de projet Agile"}],
@@ -23,7 +30,7 @@ var experience3 = {
 }
 
 var experience4 = {
-    title:"Intern - Backend Software Engineer",
+    title:"Stage - Ingénieur Logiciel Web Backend",
     subtitle:"Société Générale - Paris",
     text:"Développeur Web Backend de services cloud.",
     list:[{id: 1, text: "Développement Python"}, {id: 2, text: "Sqlalchemy"}, {id: 3, text: "Flask"}, {id: 4, text: "Jenkins"}, {id: 5, text: "Gestion de bases de données postgreSQL"}, {id: 6, text: "Tests et mocks des api dans une optique de TDD"},],
@@ -31,7 +38,7 @@ var experience4 = {
 }
 
 var experience5 = {
-    title:"Intern - Python Developer",
+    title:"Stage - Développeur Python",
     subtitle:"Airbus Defence and Space - Elancourt",
     text:"Développer un logiciel de traitement d’images dans le but de reconnaître et d’annoter automatiquement un dataset d’images satellites avec Airbus Defence and Space.",
     list:[{id: 1, text: "Développement Python d’un algorithme de traitement d’images"}, {id: 2, text: "Développement de scripts Python"}, {id: 3, text: "Mise en place d’un algorithme de Deep Learning destiné à la reconnaissance automatique de navires en mer"}, {id: 4, text: "Outils de gestion de projets : Notion, Google Collab"},],
@@ -39,17 +46,13 @@ var experience5 = {
 }
 
 var experience6 = {
-    title:"Intern - IT Junior Consultant",
+    title:"Stage - Consultant Junior IT",
     subtitle:"Wavestone - Paris",
     text:"Au sein de la practice “IT & Data Architecture” participation à la refonte du système SI d’une grande entreprise au cours de différentes missions :",
     list:[{id: 1, text: "Mise en œuvre d’un cahier des charges adéquat aux besoins du client"}, {id: 2, text: "Formation sur les bases du SI et des réseaux"}, {id: 3, text: "Autonomie et une capacité d’adaptation au regard des différents clients"}],
     image:"wavestone.png",
 }
 
+var listData = [section, experience1, experience2, experience3, experience4, experience5, experience6]
 
-exports.experience1 = experience1
-exports.experience2 = experience2
-exports.experience3 = experience3
-exports.experience4 = experience4
-exports.experience5 = experience5
-exports.experience6 = experience6
+exports.experiencesData = listData

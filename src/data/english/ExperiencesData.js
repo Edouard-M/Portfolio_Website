@@ -1,3 +1,10 @@
+const section = {
+    section:"Experiences",
+    subtitle1:"Education",
+    subtitle2:"Professional",
+    download_button:"Download Resume",
+}
+
 var experience1 = {
     title:"ECE - Engineering School",
     subtitle:"“Ecole Centrale d’Electronique” - 2018 - 2023",
@@ -46,10 +53,6 @@ var experience6 = {
     image:"wavestone.png",
 }
 
+var listData = [section, experience1, experience2, experience3, experience4, experience5, experience6]
 
-exports.experience1 = experience1
-exports.experience2 = experience2
-exports.experience3 = experience3
-exports.experience4 = experience4
-exports.experience5 = experience5
-exports.experience6 = experience6
+exports.experiencesData = listData

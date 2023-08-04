@@ -3,7 +3,7 @@ import {BiLogoLinkedin, BiLogoGithub, BiLogoGmail} from 'react-icons/bi'
 import { Link } from "react-router-dom";
 
 
-function Footer() {
+function Footer({data}) {
   return (
     <footer id="footer">
         <div className='footer-name'>Edouard Mignien</div>
@@ -18,8 +18,8 @@ function Footer() {
               <div className='footer-social-icon'><BiLogoGmail/></div>
           </a>
         </div>
-        <div className='footer-credits'> Created with React.js</div>
-        <div className='footer-credits'> Developed and Designed by Edouard Mignien</div>
+        <div className='footer-credits'>{data.subtitle_1}</div>
+        <div className='footer-credits'>{data.subtitle_2}</div>
     </footer>
   )
 }

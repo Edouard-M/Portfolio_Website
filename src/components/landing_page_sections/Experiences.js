@@ -1,28 +1,27 @@
 import React from 'react'
 import Experience from '../landing_page_components/Experience'
-import {experience1, experience2, experience3, experience4, experience5, experience6} from '../../data/french/ExperiencesData'
 import {Reveal} from '../animations/Reveal'
 
 
-function Experiences() {
+function Experiences({data}) {
   return (
     <div className='experiences-main'>
-        <div className='center'><Reveal><h2>Experiences<span className='point'>.</span></h2></Reveal></div>
+        <div className='center'><Reveal><h2>{data[0].section}<span className='point'>.</span></h2></Reveal></div>
         <div className='experiences-container'>
             <div className='experiences-column experiences-column-left'>
-                <div className='experiences-subtitle'>Education</div>
-                <Experience title={experience1.title} subtitle={experience1.subtitle} text={experience1.text} list={experience1.list} image={experience1.image}/>
-                <Experience title={experience2.title} subtitle={experience2.subtitle} text={experience2.text} list={experience2.list} image={experience2.image}/>
-                <Experience title={experience3.title} subtitle={experience3.subtitle} text={experience3.text} list={experience3.list} image={experience3.image}/>
+                <div className='experiences-subtitle'>{data[0].subtitle1}</div>
+                <Experience title={data[1].title} subtitle={data[1].subtitle} text={data[1].text} list={data[1].list} image={data[1].image}/>
+                <Experience title={data[2].title} subtitle={data[2].subtitle} text={data[2].text} list={data[2].list} image={data[2].image}/>
+                <Experience title={data[3].title} subtitle={data[3].subtitle} text={data[3].text} list={data[3].list} image={data[3].image}/>
             </div>
             <div className='experiences-column experiences-column-right'>
-                <div className='experiences-subtitle'>Professional</div>
-                <Experience title={experience4.title} subtitle={experience4.subtitle} text={experience4.text} list={experience4.list} image={experience4.image}/>
-                <Experience title={experience5.title} subtitle={experience5.subtitle} text={experience5.text} list={experience5.list} image={experience5.image}/>
-                <Experience title={experience6.title} subtitle={experience6.subtitle} text={experience6.text} list={experience6.list} image={experience6.image}/>
+                <div className='experiences-subtitle'>{data[0].subtitle2}</div>
+                <Experience title={data[4].title} subtitle={data[4].subtitle} text={data[4].text} list={data[4].list} image={data[4].image}/>
+                <Experience title={data[5].title} subtitle={data[5].subtitle} text={data[5].text} list={data[5].list} image={data[5].image}/>
+                <Experience title={data[6].title} subtitle={data[6].subtitle} text={data[6].text} list={data[6].list} image={data[6].image}/>
             </div>
         </div>
-        <div className='experiences-button'>Dowload Resume</div>
+        <div className='experiences-button'>{data[0].download_button}</div>
     </div>
   )
 }

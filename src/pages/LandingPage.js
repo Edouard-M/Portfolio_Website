@@ -12,19 +12,34 @@ import Footer from '../components/generics/Footer';
 import LanguageButton from '../components/landing_page_components/LanguageButton'
 import '../style/App.css';
 
-import {aboutData as aboutDataEn} from '../data/english/AboutData'
-import {aboutData as aboutDataFr} from '../data/french/AboutData'
 import {heroData as heroDataEn} from '../data/english/HeroData'
 import {heroData as heroDataFr} from '../data/french/HeroData'
+import {aboutData as aboutDataEn} from '../data/english/AboutData'
+import {aboutData as aboutDataFr} from '../data/french/AboutData'
 import {skillsData as skillsDataEn} from '../data/english/SkillsData'
 import {skillsData as skillsDataFr} from '../data/french/SkillsData'
 import {navbarData as navbarDataEn} from '../data/english/NavbarData'
 import {navbarData as navbarDataFr} from '../data/french/NavbarData'
+import {projectsData as projectsDataEn} from '../data/english/ProjectsData'
+import {projectsData as projectsDataFr} from '../data/french/ProjectsData'
+import {feedbacksData as feedbacksDataEn} from '../data/english/FeedbacksData'
+import {feedbacksData as feedbacksDataFr} from '../data/french/FeedbacksData'
+import {contactData as contactDataEn} from '../data/english/ContactData'
+import {contactData as contactDataFr} from '../data/french/ContactData'
+import {experiencesData as experiencesDataEn} from '../data/english/ExperiencesData'
+import {experiencesData as experiencesDataFr} from '../data/french/ExperiencesData'
+import {footerData as footerDataEn} from '../data/english/FooterData'
+import {footerData as footerDataFr} from '../data/french/FooterData'
 
 var navbarData = navbarDataEn;
 var aboutData = aboutDataEn;
 var heroData = heroDataEn;
 var skillsData = skillsDataEn;
+var projectsData = projectsDataEn;
+var feedbacksData = feedbacksDataEn;
+var contactData = contactDataEn;
+var experiencesData = experiencesDataEn;
+var footerData = footerDataEn;
 
 const init_laguage = "en"
 
@@ -38,12 +53,22 @@ function LandingPage() {
       heroData = heroDataEn
       skillsData = skillsDataEn
       navbarData = navbarDataEn
+      projectsData = projectsDataEn
+      feedbacksData = feedbacksDataEn
+      contactData = contactDataEn
+      experiencesData = experiencesDataEn
+      footerData = footerDataEn
     }
     else{
       aboutData = aboutDataFr
       heroData = heroDataFr
       skillsData = skillsDataFr
       navbarData = navbarDataFr
+      projectsData = projectsDataFr
+      feedbacksData = feedbacksDataFr
+      contactData = contactDataFr
+      experiencesData = experiencesDataFr
+      footerData = footerDataFr
     }
   }, [activeLanguage]);
 
@@ -64,19 +89,19 @@ function LandingPage() {
             <Skills data={skillsData}/>
           </section>
           <section id="projects" className='projects'>
-            <Projects/>
+            <Projects data={projectsData}/>
           </section>
           <section id="experiences" className='experiences'>
-            <Experiences/>
+            <Experiences data={experiencesData}/>
           </section>
           <section id="feedbacks" className='feedbacks'>
-            <Feedbacks/>
+            <Feedbacks data={feedbacksData}/>
           </section>
           <section id="contact" className='contact'>
-            <Contact/>
+            <Contact data={contactData}/>
           </section>
           </div>
-            <Footer/>
+            <Footer data={footerData}/>
         </div>
     </div>
     
