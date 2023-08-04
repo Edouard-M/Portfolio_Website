@@ -32,7 +32,7 @@ var experience3 = {
 var experience4 = {
     title:"Stage - Ingénieur Logiciel Web Backend",
     subtitle:"Société Générale - 6 mois",
-    text:"Développement en production de nouvelles fonctionalitées de la plateforme 'Database Management Services'",
+    text:"Développement en production de nouvelles fonctionalités de la plateforme 'Database Management Services'",
     list:[{id: 1, text: "Développeur backend Python pour les services cloud"}, {id: 2, text: "Framework Backend: Flask"}, {id: 3, text: "Utilisation d'API REST"}, {id: 4, text: "Gestion de bases de données postgreSQL"}, {id: 5, text: "Tests et mocks des api dans une optique de TDD"},  {id: 6, text: "Environnement de production: Jenkins & Github actions"},],
     image:"sg.png",
 }
@@ -49,7 +49,7 @@ var experience6 = {
     title:"Stage - Consultant Junior IT",
     subtitle:"Wavestone - 2 mois",
     text:"Au sein de la practice “IT & Data Architecture” participation à la refonte du système SI d’une grande entreprise au cours de différentes missions :",
-    list:[{id: 1, text: "Mise en œuvre d’un cahier des charges adéquat aux besoins du client"}, {id: 2, text: "Formation sur les bases du SI et des réseaux"}, {id: 3, text: "Autonomie et une capacité d’adaptation au regard des différents clients"}],
+    list:[{id: 1, text: "Mise en œuvre d’un cahier des charges adéquat aux besoins du client"}, {id: 2, text: "Formation sur les bases du SI et des réseaux"}, {id: 3, text: "Autonomie et capacité d’adaptation au regard des différents clients"}],
     image:"wavestone.png",
 }
 

@@ -13,8 +13,8 @@ const project1 = {
 
 const project2 = {
     title: "App Supermaché",
-    subtitle: "Projet scolaire",
-    text: "Ce projet vise à créer l'infrastructure informatique complète d'un marché. En utilisant des compétences Backend et Frontend appris en classe (Note : 19.5/20)",
+    subtitle: "Projet étudiant",
+    text: "Ce projet vise à créer l'infrastructure informatique complète d'un marché. En utilisant des compétences Backend et Frontend apprises en cours (Note : 19.5/20)",
     image: "market.png",
     button_color: "#E9A072",
     github_link: "https://github.com/Edouard-M/School-Java-Market-Project",
@@ -25,8 +25,8 @@ const project2 = {
 
 const project3 = {
     title: "Jet Flight",
-    subtitle: "Projet personel",
-    text: "Jet Flight est une simulation qui vise à recréer la sensation de piloter un avion de chasse avec des commandes de vol amusantes et accessibles basés sur le modèle physique réel.",
+    subtitle: "Projet personnel",
+    text: "Jet Flight est une simulation qui vise à recréer la sensation de piloter un avion de chasse avec des commandes de vol amusantes et accessibles basées sur le modèle physique réel.",
     image: "jet-flight.png",
     button_color: "#73BBC5",
     github_link: "https://github.com/Edouard-M",
