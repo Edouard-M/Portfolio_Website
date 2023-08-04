@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7417e99f.css",
-    "main.js": "/static/js/main.2f385b70.js",
+    "main.css": "/static/css/main.e30a8139.css",
+    "main.js": "/static/js/main.1d87a0e4.js",
     "static/media/me_laptop.png": "/static/media/me_laptop.3e84c2aa6911af09b6ab.png",
     "static/media/jet-flight.png": "/static/media/jet-flight.969ec4303588253b5a7f.png",
     "static/media/blindar.png": "/static/media/blindar.30fb1ecfa7786382fe7c.png",
@@ -18,11 +18,11 @@
     "static/media/2e1142a8c.jpg": "/static/media/2e1142a8c.de9c9e5bd45b332d7a0c.jpg",
     "static/media/2e189becf.jpg": "/static/media/2e189becf.94e14b54b1678ecaff62.jpg",
     "index.html": "/index.html",
-    "main.7417e99f.css.map": "/static/css/main.7417e99f.css.map",
-    "main.2f385b70.js.map": "/static/js/main.2f385b70.js.map"
+    "main.e30a8139.css.map": "/static/css/main.e30a8139.css.map",
+    "main.1d87a0e4.js.map": "/static/js/main.1d87a0e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7417e99f.css",
-    "static/js/main.2f385b70.js"
+    "static/css/main.e30a8139.css",
+    "static/js/main.1d87a0e4.js"
   ]
 }
