@@ -1,6 +1,6 @@
 var aboutData1 = {
     section:"A propos",
-    title:"Developer Fullstack  / jeune diplômé",
+    title:"Développeur Fullstack",
     text:"Passionné par la programmation et les algorithmes. J'aime le développement fullstack car il permet de créer et de sublimer de grandes structures de programmation. Au cours de mes différents stages et pratiques personnelles, j'ai acquis différentes connaissances en ingénierie et développement web que je serai ravi de partager avec vous.",
     list: [
         {title: "Niveau:", text: "Master"},

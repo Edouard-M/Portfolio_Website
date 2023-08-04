@@ -56,6 +56,7 @@ h2{
   align-items: center;
   color: var(--color-second);;
   -webkit-text-stroke: 1px var(--color-text);
+  letter-spacing: -0.02rem;
 }
 
 h2::after {
@@ -689,6 +690,7 @@ h2::after {
   font-style: normal;
   font-weight: 600;
   margin-bottom: 20px;
+  letter-spacing: -0.05rem;
 }
 
 .about-text{
@@ -698,6 +700,7 @@ h2::after {
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
+  letter-spacing: -0.02rem;
 }
 
 .about-sublist{
@@ -705,6 +708,7 @@ h2::after {
   margin-top: clamp(10px, 2vw, 50px);
   display: flex;
   flex-direction: row;
+  letter-spacing: -0.02rem;
 }
 
 .about-subcolumn{
@@ -783,6 +787,7 @@ h2::after {
 .skills-icone-text{
   font-size: 18px;
   color: var(--color-text);
+  letter-spacing: -0.02rem;
 }
 
 /*--------------------------------------------------------------
@@ -833,8 +838,9 @@ h2::after {
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  letter-spacing: -0.05rem;
 }
 
 .project-subtitle{
@@ -842,6 +848,7 @@ h2::after {
   font-style: italic;
   font-weight: 300;
   margin-bottom: 20px;
+  letter-spacing: -0.03rem;
 }
 
 .project-text{
@@ -849,6 +856,7 @@ h2::after {
   font-style: normal;
   font-weight: 300;
   margin-bottom: 20px;
+  letter-spacing: -0.02rem;
 }
 
 .project-point{
@@ -906,6 +914,7 @@ h2::after {
   transition: all 0.3s;
   cursor: pointer;
   scale:1.15;
+  letter-spacing: -0.03rem;
 }
 
 .project-button-demo:hover{
@@ -921,6 +930,7 @@ h2::after {
 #experiences{
   box-sizing:content-box;
   margin-bottom: 50px;
+  letter-spacing: -0.02rem;
 }
 
 .experiences-main{
@@ -968,6 +978,7 @@ h2::after {
   font-size: 24px;
   font-weight: 600;
   margin-left: 5px;
+  letter-spacing: -0.05rem;
 }
 
 .experiences-experience{
@@ -986,6 +997,7 @@ h2::after {
   font-style: normal;
   font-weight: 500;
   color: var(--color-main);
+  letter-spacing: -0.05rem;
 }
 
 .experience-subtitle{
@@ -1013,6 +1025,7 @@ h2::after {
   left: 0px;
   text-align: left;
   padding: 0px 0px 0px 20px;
+  letter-spacing: -0.01rem;
 }
 
 .experience-timeline{
@@ -1054,6 +1067,7 @@ h2::after {
   justify-content: center;
   border: solid;
   transition: all 0.5s;
+  letter-spacing: -0.02rem;
 }
 
 .experiences-button:hover{
@@ -1114,6 +1128,7 @@ h2::after {
   margin-bottom: 5px;
   font-size: 21px;
   font-weight: 600;
+  letter-spacing: -0.02rem;
 }
 
 .feedback-citation{
@@ -1121,6 +1136,7 @@ h2::after {
   flex-direction: row;
   margin-top: 15px;
   height: 100px;
+  letter-spacing: -0.02rem;
 }
 
 .feedback-subtitle{
@@ -1128,6 +1144,7 @@ h2::after {
   font-weight: 300;
   text-align: center;
   color: rgba(69, 80, 91, 0.70);
+  letter-spacing: -0.02rem;
 }
 
 .feedback-text{
@@ -1221,6 +1238,7 @@ h2::after {
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s;
+  letter-spacing: -0.02rem;
 }
 
 .contact-button:hover{
@@ -1262,6 +1280,7 @@ footer{
   text-align: center;
   font-style: normal;
   font-weight: 600;
+  letter-spacing: -0.02rem;
 }
 
 .footer-credits{
@@ -1275,6 +1294,7 @@ footer{
   text-align: center;
   font-style: italic;
   font-weight: 300;
+  letter-spacing: -0.02rem;
 }
 
 .footer-social{
@@ -1498,6 +1518,7 @@ footer{
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -30px;
   }
   .projects-project{
     margin-left: auto;
