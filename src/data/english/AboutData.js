@@ -1,5 +1,6 @@
 var aboutData1 = {
-    title:"Fullstack Junior Developer / young graduate",
+    section:"About",
+    title:"Fullstack Developer / young graduate",
     text:"Passionate about programming and algorithms. I love fullstack development because of the capability to create and sublimate great programming structure. During my different internships and personal practices, I acquired different knowledges in software engineering that I'd be delighted to share with you.",
     list: [
         {title: "Degree:", text: "Master"},

@@ -22,9 +22,6 @@ function LanguageButton({activeLanguage, setActiveLanguage, value1, value2}) {
             color2 = "var(--color-second)";
             backgroundcolor = "var(--color-second)";
         }
-
-        console.log(activeLanguage)
-        console.log(translate)
       };
 
     return (

@@ -9,11 +9,11 @@ import {TbApi} from 'react-icons/tb'
 import {Reveal} from '../animations/Reveal'
 
 
-function Skills() {
+function Skills({data}) {
   return (
     <div className='skills-container'>
         <div className='skills-back-column'>
-            <div className='center'><Reveal className="test"><h2 className='skills-h2'>Back-end Skills<span className='point'>.</span></h2></Reveal></div>
+            <div className='center'><Reveal className="test"><h2 className='skills-h2'>{data.section_back}<span className='point'>.</span></h2></Reveal></div>
             <div className='skills-icones-container'>
                 <div className='skills-icones-row'>
                     <div className='skills-icone-container'><div className='skills-icone'><IoLogoPython color='#018476'/></div><Reveal><span className='skills-icone-text'>Python</span></Reveal></div>
@@ -28,7 +28,7 @@ function Skills() {
             </div>
         </div>
         <div className='skills-front-column'>
-            <div className='center'><Reveal><h2 className='skills-h2'>Front-end Skills<span className='point'>.</span></h2></Reveal></div>
+            <div className='center'><Reveal><h2 className='skills-h2'>{data.section_front}<span className='point'>.</span></h2></Reveal></div>
             <div className='skills-icones-container'>
                 <div className='skills-icones-row'>
                     <div className='skills-icone-container'><div className='skills-icone'><RiJavascriptFill color='#E7D24C'/></div><Reveal><span className='skills-icone-text'>JavaScript</span></Reveal></div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-function Header() {
+function Header({data}) {
   return (
     <div className='header'>
-      <Navbar/>
+      <Navbar data={data}/>
     </div>
   )
 }
