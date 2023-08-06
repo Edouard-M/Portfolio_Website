@@ -1,6 +1,7 @@
 import React from 'react'
 import Experience from '../landing_page_components/Experience'
 import {Reveal} from '../animations/Reveal'
+import { Link } from "react-router-dom";
 
 
 function Experiences({data}) {
@@ -21,7 +22,7 @@ function Experiences({data}) {
                 <Experience title={data[6].title} subtitle={data[6].subtitle} text={data[6].text} list={data[6].list} image={data[6].image}/>
             </div>
         </div>
-        <div className='experiences-button'>{data[0].download_button}</div>
+        <Link to="/cv/CV_Edouard_Mignien.pdf" target="_blank" download><div className='experiences-button'>{data[0].download_button}</div></Link>
     </div>
   )
 }
