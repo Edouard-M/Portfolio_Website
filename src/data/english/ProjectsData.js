@@ -24,6 +24,18 @@ const project2 = {
 };
 
 const project3 = {
+    title: "Blindar App",
+    subtitle: "Group project",
+    text: "Student project to make culture more accessible to the visually impaired. By developing a mobile application that react according to the finger's position.",
+    image: "blindar.png",
+    button_color: "#73BBC5",
+    github_link: "https://github.com/Edouard-M",
+    demo_link: "https://blindar.fr/",
+    demo_button: "Open Demo",
+};
+
+/*
+const project4 = {
     title: "Jet Flight",
     subtitle: "Personal project",
     text: "Jet Flight is a simulation that aims to recreate the feeling of flying a fighter plane with fun and accessible flight controls based on the real physical model.",
@@ -33,6 +45,7 @@ const project3 = {
     demo_link: "https://jet-flight.fr/",
     demo_button: "Open Demo",
 };
+*/
 
 var listData = [section, project1, project2, project3]
 

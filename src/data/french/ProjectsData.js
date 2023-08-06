@@ -23,7 +23,20 @@ const project2 = {
    demo_button: "Ouvrir Demo",
 };
 
+
 const project3 = {
+    title: "App Blindar",
+    subtitle: "Projet de groupe",
+    text: "Projet étudiant pour rendre la culture plus accessible aux déficients visuels. En développant une application mobile qui réagit en fonction de la position du doigt.",
+    image: "blindar.png",
+    button_color: "#73BBC5",
+    github_link: "https://github.com/Edouard-M",
+    demo_link: "https://blindar.fr/",
+    demo_button: "Ouvrir Demo",
+};
+
+/*
+const project4 = {
     title: "Jet Flight",
     subtitle: "Projet personnel",
     text: "Jet Flight est une simulation qui vise à recréer la sensation de piloter un avion de chasse avec des commandes de vol amusantes et accessibles basées sur le modèle physique réel.",
@@ -33,6 +46,7 @@ const project3 = {
     demo_link: "https://jet-flight.fr/",
     demo_button: "Ouvrir Demo",
 };
+*/
 
 var listData = [section, project1, project2, project3]
 
