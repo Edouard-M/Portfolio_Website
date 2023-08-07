@@ -25,7 +25,7 @@ const project2 = {
 
 const project3 = {
     title: "Blindar App",
-    subtitle: "Group project",
+    subtitle: "Nominated at the ECE innov awards",
     text: "Student project to make culture more accessible to the visually impaired. By developing a mobile application that react according to the finger's position.",
     image: "blindar.png",
     button_color: "#73BBC5",
